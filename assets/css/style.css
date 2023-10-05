@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap');
+
+/* General styles */
+* {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/* Background image */
+#bg-image {
+    background-image: url('../images/background-image.webp')
+}
+
+/* code from my coffee ceremony project*/
+.background {
+    height: 100vh;
+    background: center 20% /cover no-repeat;
+}
+
+/* textblock on landing page*/
+.welcome {
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 50%;
+
+}
+
+
+
+
+
+/* footer */
+
+footer {
+    background-color: black;
+    position:fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99;
+}
+
+#social-media {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 110%;
+    list-style-type: none;
+}
+
+#social-media i:hover {
+    padding: 0;
+    color: white;
+}
+
+#social-media a {
+    color: white;
+}
+
