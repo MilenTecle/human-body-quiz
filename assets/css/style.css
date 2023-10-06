@@ -11,6 +11,18 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+header {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    padding: 10px 10px;
+}
+
+/*Change the font awesome logo color*/
+i {
+    color: white;
+}
+
 /* Background image */
 /*The height and background from my coffee ceremony page*/
 .background {
@@ -25,7 +37,7 @@ body {
 .welcome {
     border: 1px solid rgb(159, 197, 248);
     background-color: rgba(159, 197, 248, 0.7);
-    width: 50%;
+    max-width: 50%;
     height: 30%;
     top: 50%;
     position: absolute;
@@ -54,6 +66,7 @@ body {
     padding: 5px 20px;
     border: 1px solid white;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 /* footer */
