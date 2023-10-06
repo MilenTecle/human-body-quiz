@@ -21,6 +21,7 @@ header {
 /*Change the font awesome logo color*/
 i {
     color: white;
+    cursor: pointer;
 }
 
 a {

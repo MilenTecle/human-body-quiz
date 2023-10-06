@@ -8,5 +8,7 @@ const questions = [
             { text: "Liver", correct: false},
         ]
     },
-    
+
 ]
+
+const audio = new Audio('assets/audio/heartbeat-sound.mp3');
