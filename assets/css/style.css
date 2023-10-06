@@ -16,6 +16,12 @@ header {
     align-items: baseline;
     position: absolute;
     padding: 10px 10px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    width: 100%;
 }
 
 /*Change the font awesome logo color*/
