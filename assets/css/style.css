@@ -24,10 +24,16 @@ nav {
     width: 100%;
 }
 
+.about {
+    margin-left: auto;
+    padding-right: 4%;
+}
+
 /*Change the font awesome logo color*/
 i {
     color: white;
     cursor: pointer;
+    font-size: 150%;
 }
 
 a {
