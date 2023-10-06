@@ -23,6 +23,11 @@ i {
     color: white;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 /* Background image */
 /*The height and background from my coffee ceremony page*/
 .background {
