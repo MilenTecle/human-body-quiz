@@ -37,10 +37,12 @@ const resultBoard = document.getElementById('results');
 const scoreNumber = document.getElementById('scorenumber');
 const scoreText = document.getElementById('score-text');
 const finishedText = document.getElementById('finished');
+const welcomeText = document.getElementById('text-container');
 
 let score = 0;
 let currentQuestionIndex = 0;
 let shuffledQuestions;
+let numberOf = 0;
 let maxQuestions = 10;
 
 
@@ -49,7 +51,32 @@ startQuiz.addEventListener('click', startTheQuiz)
 
 function startTheQuiz() {
   currentQuestionIndex = 0;
+  score = 0;
+  nextButton.innerHTML = "Next";
+  startQuiz.classList.add('hide');
+  welcomeText.classList.add('hide');
+  // Sort method used from:https://www.youtube.com/watch?v=riDzcEQbX6k
+  shuffledQuestions = questions.sort(() => Math.random() - .5);
+  presentQuestions();
 }
+
+function presentQuestions() {
+    let currentQuestion = shuffledQuestions[currentQuestionIndex];
+
+    questionNumber = currentQuestionIndex + 1;
+    questionQuiz.textContent = currentQuestion.question;
+    questionArea.textContent = `Question ${numberOf} of ${maxQuestions}`;
+
+    currentQuestion.answers.forEach(answers => {
+        const button = document.createElement("button");
+        button.innerHTML = answers.text;
+        button.classList.add("answer-btns");
+        answerButtons.appendChild(button);
+    });
+}
+
+startTheQuiz();
+
 
 
 
