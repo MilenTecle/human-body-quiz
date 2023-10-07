@@ -16,12 +16,40 @@ function toggleSound() {
     }
 }
 
+
 // Click event listenters to sound icons
 soundOn.addEventListener('click', toggleSound);
 soundOff.addEventListener('click', toggleSound);
 
 // Hides the sound-on icon
 soundOn.style.display = 'none';
+
+
+//Connect the html id:s and elements to variables
+const startQuiz = document.getElementById('start-button');
+const quizBoard = document.getElementById('quiz-board');
+const answerButtons = document.getElementById('answer-btns');
+const nextButton = document.getElementById('next-button');
+const questionArea = document.getElementById('question-area');
+const questionQuiz = document.getElementById('questions');
+const countScore = document.getElementById('score');
+const resultBoard = document.getElementById('results');
+const scoreNumber = document.getElementById('scorenumber');
+const scoreText = document.getElementById('score-text');
+const finishedText = document.getElementById('finished');
+
+let score = 0;
+let currentQuestionIndex = 0;
+let shuffledQuestions;
+let maxQuestions = 10;
+
+
+// Event Listener to start the quiz
+startQuiz.addEventListener('click', startTheQuiz)
+
+function startTheQuiz() {
+  currentQuestionIndex = 0;
+}
 
 
 

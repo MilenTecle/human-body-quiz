@@ -79,16 +79,25 @@ a {
     padding: 10%;
 }
 
-#start-button {
+.btn {
+    font-size: 90%;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+#answer-btns {
     font-size: 90%;
     padding: 5px 20px;
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
+    width: 100%;
 }
 
 /* footer */
-
 footer {
     background-color: black;
     position:fixed;
