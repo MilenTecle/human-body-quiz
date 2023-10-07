@@ -37,12 +37,45 @@
         <div id="text-container">
         <h2 id="text">Welcome to the human body quiz!</h2>
         <p>This quiz will test your general knowledge about the human body.</p>
-        <div class="start-quiz">
-        <button class="button">Start quiz</button>
+
+        <!--Start quiz-->
+        <div class="quiz-content start-quiz">
+        <button id="start-button">Start quiz</button>
         </div>
         </div>
     </div>
     </section>
+
+    <!--Next button-->
+    <div class="quiz-content start-quiz">
+        <div>
+            <button id="next-button">Next</button>
+        </div>
+    </div>
+
+    <!--Elements and content for the quiz made in JS-->
+    <div class="quiz-content">
+        <div id="quiz-board" class="hide-content">
+            <div id="question-area" class="quiz-questions"></div>
+            <div id="questions" class="quiz-questions"></div>
+            <!--Scoreboard-->
+            <div id="answer-btns"></div>
+            <div class="track-score">
+                <div id="score">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!--Elements and content to display results to the user-->
+    <div class="quiz-content">
+        <div id="results" class="hide-content"></div>
+          <div class="quiz-content">
+            <h2 id="finished">You scored:<span>0</span></h2>
+            <p class="result-feedback" id="scorenumber"></p>
+            <p class="result-feedback" id="score-text"></p>
+          </div>
+    </div>
+
     <!--footer-->
       <ul id="social-media">
         <li><a href="www.linkedin.com/in/milen-tecle" target="_blank" rel="noopener" aria-label="Visit my LinkedIn page (opens in new tab)">
