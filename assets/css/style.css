@@ -88,15 +88,47 @@ a {
     margin: 0 auto;
 }
 
+.next {
+    margin: 7% auto;
+}
+
+.question-div {
+        border: 1px solid rgb(159, 197, 248);
+        background: rgba(159, 197, 248, 0.7);
+        max-width: 50%;
+        height: 40%;
+        top: 45%;
+        position: relative;
+}
+
+.question-div  .btn, 
+.track-score {
+    display: flex;
+    justify-content: center;
+}
+
+.quiz-questions {
+    padding: 2%;
+}
+
+
 .answer-btns {
     font-size: 90%;
     padding: 5px 20px;
     border: 1px solid white;
     border-radius: 4px;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
+    margin: 2% 10%;
 }
 
+.answer-btns:hover {
+    background: #0b2742;
+    color: white;
+    border: 1px solid #0b2742;
+}
+
+/*
 #answer-btns {
     font-size: 90%;
     padding: 5px 20px;
@@ -107,7 +139,7 @@ a {
     height: 30%;
     top: 45%;
 }
-
+/*
 /* Hide the start-button and welcome text */
 .hide {
     display: none;
