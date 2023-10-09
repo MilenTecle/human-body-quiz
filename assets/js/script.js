@@ -76,6 +76,22 @@ function presentQuestions() {
     });
 }
 
+//Next question
+
+nextButton.addEventListener('click', nextQuestion);
+
+function nextQuestion() {
+    if(currentQuestionIndex < questions.length) {
+     currentQuestionIndex + 1;
+     questionQuiz.textContent = currentQuestionIndex.question;
+    questionArea.textContent = `Question ${numberOf} out of ${maxQuestions}`;
+    
+    presentQuestions();
+    } else {
+        quizBoard.classList.add('hide');
+        resultBoard.classList.remove('hide');
+    }
+}
 
 
 // Quiz questions
