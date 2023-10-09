@@ -9,6 +9,11 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    height: 100vh;
+    background: center 20% /cover no-repeat;
+    background-image: url('../images/background-image.webp');
+    display: flex;
+    justify-content: center;
 }
 
 header {
@@ -42,7 +47,7 @@ a {
 }
 
 /* Background image */
-/*The height and background from my coffee ceremony page*/
+/*The height and background from my coffee ceremony page
 .background {
     height: 100vh;
     background: center 20% /cover no-repeat;
@@ -50,7 +55,7 @@ a {
     display: flex;
     justify-content: center;
 }
-
+*/
 /* textblock on landing page*/
 .welcome {
     border: 1px solid rgb(159, 197, 248);

@@ -32,7 +32,6 @@
         </nav>
     </header>
     <!--main content-->
-    <section class="background">
     <div class="welcome">
         <div id="text-container">
         <h2 id="text">Welcome to the human body quiz!</h2>
@@ -44,12 +43,10 @@
         </div>
         </div>
     </div>
-    </section>
 
     <!--Elements and content for the quiz made in JS-->
-    <section class="background">
     <div class="question-div">
-        <div id="quiz-board" class="hide-content">
+        <div id="quiz-board" class="hide">
             <div id="question-area" class="quiz-questions"></div>
             <div id="questions" class="quiz-questions"></div>
             <!--Scoreboard-->
@@ -64,25 +61,24 @@
 </div>
         </div>
     </div>
-</section>
 
     <!--Elements and content to display results to the user-->
     <div class="quiz-content">
-        <div id="results" class="hide-content"></div>
+        <div id="results" class="hide"></div>
           <div class="quiz-content">
-            <h2 id="finished">You scored:<span>0</span></h2>
+            <h2 class="total-score hide" id="finished">You scored:<span>0</span></h2>
             <p class="result-feedback" id="scorenumber"></p>
             <p class="result-feedback" id="score-text"></p>
           </div>
     </div>
 
-    <!--footer-->
+    <!--footer
       <ul id="social-media">
         <li><a href="www.linkedin.com/in/milen-tecle" target="_blank" rel="noopener" aria-label="Visit my LinkedIn page (opens in new tab)">
             <i class="fa-brands fa-linkedin"></i></a></li>
         <li><a href="https://github.com/MilenTecle/human-body-quiz"target="_blank" rel="noopener" aria-label="Visit the Github repo (opens in new tab)">
             <i class="fa-brands fa-github"></i></a></li>
-      </ul>
+      </ul>-->
 
 <script src="assets/js/script.js"></script>
 <!--Font Awesome kit-->

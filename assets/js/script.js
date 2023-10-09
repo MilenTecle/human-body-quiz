@@ -54,14 +54,16 @@ function startTheQuiz() {
   score = 0;
   startQuiz.classList.add('hide');
   welcomeText.classList.add('hide');
+  quizBoard.classList.add('hide');
   // Sort method used from:https://www.youtube.com/watch?v=riDzcEQbX6k
   shuffledQuestions = questions.sort(() => Math.random() - .5);
   presentQuestions();
 }
 
+//Display the quiz questions
 function presentQuestions() {
     let currentQuestion = shuffledQuestions[currentQuestionIndex];
-
+    quizBoard.classList.remove('hide');
     questionNumber = currentQuestionIndex + 1;
     questionQuiz.textContent = currentQuestion.question;
     questionArea.textContent = `Question ${numberOf} out of ${maxQuestions}`;
