@@ -54,7 +54,7 @@ function startTheQuiz() {
   score = 0;
   startQuiz.classList.add('hide');
   welcomeText.classList.add('hide');
-  quizBoard.classList.add('hide');
+  quizBoard.classList.remove('hide');
   // Sort method used from:https://www.youtube.com/watch?v=riDzcEQbX6k
   shuffledQuestions = questions.sort(() => Math.random() - .5);
   presentQuestions();
