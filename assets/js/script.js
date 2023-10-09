@@ -67,6 +67,7 @@ function presentQuestions() {
     questionNumber = currentQuestionIndex + 1;
     questionQuiz.textContent = currentQuestion.question;
     questionArea.textContent = `Question ${numberOf} out of ${maxQuestions}`;
+    numberOf++;
 
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement("button");
@@ -89,7 +90,7 @@ function nextQuestion() {
         resultBoard.classList.remove('hide');
     }
 }
-
+//This will remove the previous answers
 function resetAnswers() {
     nextButton.classList.add('hide');
     while (answerButtons.firstChild) {
