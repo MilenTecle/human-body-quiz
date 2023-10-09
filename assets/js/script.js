@@ -77,19 +77,23 @@ function presentQuestions() {
 }
 
 //Next question
-
 nextButton.addEventListener('click', nextQuestion);
 
 function nextQuestion() {
+    currentQuestionIndex += 1;
     if(currentQuestionIndex < questions.length) {
-     currentQuestionIndex + 1;
-     questionQuiz.textContent = currentQuestionIndex.question;
-    questionArea.textContent = `Question ${numberOf} out of ${maxQuestions}`;
-    
+    resetAnswers();
     presentQuestions();
     } else {
         quizBoard.classList.add('hide');
         resultBoard.classList.remove('hide');
+    }
+}
+
+function resetAnswers() {
+    nextButton.classList.add('hide');
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
