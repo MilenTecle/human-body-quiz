@@ -17,8 +17,6 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: baseline;
     position: absolute;
     padding: 10px 10px;
     width: 100%;
@@ -27,12 +25,15 @@ header {
 /* Navigation bar */
 nav {
     display: flex;
-    width: 100%;
 }
 
 .about {
     margin-left: auto;
-    padding-right: 4%;
+    padding-right: 10px;
+}
+
+.sound-control {
+    padding-left: 10px;
 }
 
 #info-btn {
