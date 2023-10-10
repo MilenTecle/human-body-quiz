@@ -37,7 +37,7 @@ const resultBoard = document.getElementById('results');
 const scoreNumber = document.getElementById('scorenumber');
 const scoreText = document.getElementById('score-text');
 const finishedText = document.getElementById('finished');
-const welcomeText = document.getElementById('text-container');
+const welcomeId = document.getElementById('welcome-id');
 
 let score = 0;
 let currentQuestionIndex = 0;
@@ -53,9 +53,9 @@ function startTheQuiz() {
   currentQuestionIndex = 0;
   score = 0;
   startQuiz.classList.add('hide');
-  welcomeText.classList.add('hide');
+  welcomeId.classList.add('hide');
   quizBoard.classList.remove('hide');
-  // Sort method used from:https://www.youtube.com/watch?v=riDzcEQbX6k
+  // Sort method to shuffle the questions is used from:https://www.youtube.com/watch?v=riDzcEQbX6k
   shuffledQuestions = questions.sort(() => Math.random() - .5);
   presentQuestions();
 }
