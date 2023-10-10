@@ -51,16 +51,7 @@ a {
     text-decoration: none;
 }
 
-/* Background image */
-/*The height and background from my coffee ceremony page
-.background {
-    height: 100vh;
-    background: center 20% /cover no-repeat;
-    background-image: url('../images/background-image.webp');
-    display: flex;
-    justify-content: center;
-}
-*/
+
 /* textblock on landing page*/
 .welcome {
     border: 1px solid rgb(159, 197, 248);
@@ -132,7 +123,9 @@ a {
     margin: 2% 10%;
 }
 
-.answer-btns:hover {
+/* add hover effec to all the buttons */
+.answer-btns:hover,
+.btn:hover {
     background: #0b2742;
     color: white;
     border: 1px solid #0b2742;
