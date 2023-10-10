@@ -24,6 +24,7 @@ header {
     width: 100%;
 }
 
+/* Navigation bar */
 nav {
     display: flex;
     width: 100%;
@@ -73,12 +74,7 @@ a {
     text-align: center;
 }
 
-/* Start quiz button */
-.start-quiz {
-    display: flex;
-    justify-content: center;
-    padding: 10%;
-}
+
 
 .btn {
     font-size: 90%;
@@ -93,6 +89,15 @@ a {
     margin: 7% auto;
 }
 
+
+/* Start quiz button */
+.start-quiz {
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+}
+
+/* Styles related to the quiz */
 .question-div {
         border: 1px solid rgb(159, 197, 248);
         background: rgba(159, 197, 248, 0.7);
@@ -112,7 +117,7 @@ a {
     padding: 2%;
 }
 
-
+/* answer button style */
 .answer-btns {
     font-size: 90%;
     padding: 5px 20px;
@@ -131,6 +136,14 @@ a {
     border: 1px solid #0b2742;
 }
 
+/* background-color to display correct/incorrect answer*/
+.correct {
+    background:#32a83a;
+}
+
+.incorrect {
+    background: #bf0a0a;
+}
 /*
 #answer-btns {
     font-size: 90%;

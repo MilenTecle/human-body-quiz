@@ -60,7 +60,7 @@ function startTheQuiz() {
   presentQuestions();
 }
 
-//Display the quiz questions
+//Displays the quiz questions
 function presentQuestions() {
     let currentQuestion = shuffledQuestions[currentQuestionIndex];
     quizBoard.classList.remove('hide');
@@ -71,7 +71,7 @@ function presentQuestions() {
 
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement("button");
-        button.innerHTML = answers.text;
+        button.textContent = answers.text;
         button.classList.add("answer-btns");
         answerButtons.appendChild(button);
     });
@@ -95,6 +95,26 @@ function resetAnswers() {
     nextButton.classList.add('hide');
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
+    }
+}
+
+// Functions to display the correct answer
+function showAnswers(answers) {
+    const buttons = Array.from(answerButtons.children);
+
+    buttons.forEach((button, index) => {
+        button.dataset.correct = answers[index].correct;
+        button.addEventListener('click', () => checkAnswer(button));
+    });
+}
+
+function checkAnswer(button) {
+    const isCorrect = button.dataset.correct === 'true';
+
+    if(isCorrect) {
+        button.classList.add('correct');
+    } else {
+        button.classList.add('incorrect');
     }
 }
 
