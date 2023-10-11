@@ -69,12 +69,15 @@ function presentQuestions() {
     questionArea.textContent = `Question ${numberOf} out of ${maxQuestions}`;
     numberOf++;
 
+    resetAnswers();
+
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement("button");
         button.textContent = answers.text;
         button.classList.add("answer-btns");
         answerButtons.appendChild(button);
     });
+    showAnswers(currentQuestion.answers);
 }
 
 //Next question
@@ -114,6 +117,8 @@ function showAnswers(answers) {
         button.dataset.correct = answers[index].correct;
         button.addEventListener('click', () => checkAnswer(button));
     });
+    nextButton.classList.remove('hide');
+    
 }
 
 function checkAnswer(button) {
@@ -121,9 +126,11 @@ function checkAnswer(button) {
 
     if(isCorrect) {
         button.classList.add('correct');
+        score++
     } else {
         button.classList.add('incorrect');
     }
+    button.disabled = true;
 }
 
 
