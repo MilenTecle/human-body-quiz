@@ -99,7 +99,8 @@ a {
 }
 
 /* Styles related to the quiz */
-.question-div {
+.question-div,
+.quiz-content{
         border: 1px solid rgb(159, 197, 248);
         background: rgba(159, 197, 248, 0.7);
         max-width: 50%;
@@ -118,6 +119,12 @@ a {
     padding: 2%;
 }
 
+/* Style and align the text when quiz is finished */
+.feedback {
+    font-size: 120%;
+    margin-top: 30%;
+}
+
 /* answer button style */
 .answer-btns {
     font-size: 90%;
@@ -129,7 +136,7 @@ a {
     margin: 2% 10%;
 }
 
-/* add hover effec to all the buttons */
+/* add hover effect to all the buttons */
 .answer-btns:hover,
 .btn:hover {
     background: #0b2742;
