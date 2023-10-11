@@ -35,8 +35,7 @@ const questionQuiz = document.getElementById('questions');
 const countScore = document.getElementById('score');
 const resultBoard = document.getElementById('results');
 const scoreNumber = document.getElementById('scorenumber');
-const scoreText = document.getElementById('score-text');
-const finishedText = document.getElementById('finished');
+const finishedText = document.getElementById('feedback-text');
 const welcomeId = document.getElementById('welcome-id');
 
 let score = 0;
@@ -54,6 +53,7 @@ function startTheQuiz() {
   score = 0;
   startQuiz.classList.add('hide');
   welcomeId.classList.add('hide');
+  resultBoard.classList.add('hide');
   quizBoard.classList.remove('hide');
   // Sort method to shuffle the questions is used from:https://www.youtube.com/watch?v=riDzcEQbX6k
   shuffledQuestions = questions.sort(() => Math.random() - .5);
@@ -88,6 +88,14 @@ function nextQuestion() {
     } else {
         quizBoard.classList.add('hide');
         resultBoard.classList.remove('hide');
+        // Present the user with different feedback depending on the score.
+        if (score >= 0 && score <= 5) {
+            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. Give it another go!`;
+        } else if (score > 5 && score <=8) {
+            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. Nicely done!`;
+        } else {
+            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. Exellent job!`;
+        }
     }
 }
 //This will remove the previous answers
