@@ -1,10 +1,13 @@
 
-// Toggles function for sound icons when clicked upon
+/**
+ * Change the sound icon when user clicks on it
+ * and play sound and vice versa.
+ */
 const audio = new Audio('assets/audio/heartbeat-sound.mp3');
 const soundOn = document.getElementById('sound-on');
 const soundOff = document.getElementById('sound-off');
 
-function toggleSound() {
+function playSound() {
     if (audio.paused) {
         audio.play();
         soundOn.style.display = ('inline-block');
@@ -17,12 +20,27 @@ function toggleSound() {
 }
 
 
-// Click event listenters to sound icons
-soundOn.addEventListener('click', toggleSound);
-soundOff.addEventListener('click', toggleSound);
+//Click event listenters to sound icons
+soundOn.addEventListener('click', playSound);
+soundOff.addEventListener('click', playSound);
 
-// Hides the sound-on icon
+//Hides the sound-on icon
 soundOn.style.display = 'none';
+
+/**
+ * Function to display info-text when user clicks on the i/about-button
+ */
+const infoText = document.getElementById('about-text');
+infoText.addEventListener('click', howToPlay);
+
+function howToPlay() {
+    if (infoText.style.display === 'none') {
+        infoText.style.display = 'inline-block';
+    } else {
+        infoText.style.display = 'none';
+    }
+}
+
 
 
 //Connect the html id:s and elements to variables
@@ -127,6 +145,7 @@ function checkAnswer(button) {
     if(isCorrect) {
         button.classList.add('correct');
         score++
+        countScore.textContent = `Score: ${score}/10`;
     } else {
         button.classList.add('incorrect');
     }
