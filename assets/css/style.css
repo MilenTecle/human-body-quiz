@@ -58,8 +58,8 @@ a {
 .welcome {
     border: 1px solid rgb(159, 197, 248);
     background-color: rgba(159, 197, 248, 0.8);
-    max-width: 50%;
-    height: 30%;
+    max-width: 60%;
+    height: 40%;
     top: 45%;
     position: absolute;
     display: flex;
@@ -94,7 +94,7 @@ a {
 .start-quiz {
     display: flex;
     justify-content: center;
-    padding: 10%;
+    margin-top: 20%;
 }
 
 /* Styles related to the quiz */
@@ -102,8 +102,8 @@ a {
 .quiz-content{
         border: 1px solid rgb(159, 197, 248);
         background: rgba(159, 197, 248, 0.8);
-        max-width: 50%;
-        height: 40%;
+        max-width: 60%;
+        height: 50%;
         top: 45%;
         position: relative;
 }
@@ -123,16 +123,24 @@ a {
     padding: 2%;
 }
 
+#questions {
+    padding-top: 5%;
+}
+
 /* Style the quiz questions */
 #question-area {
-    font-size: 120%;
+    font-size: 100%;
     font-weight: bold;
 }
 
 .quiz-questions {
-    font-size: 110%;
+    font-size: 100%;
 }
 
+#score {
+    font-weight: bold;
+    margin-top: 5%;
+}
 /* Style and align the text when quiz is finished */
 .feedback {
     font-size: 120%;

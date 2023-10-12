@@ -134,6 +134,7 @@ function showAnswers(answers) {
     buttons.forEach((button, index) => {
         button.dataset.correct = answers[index].correct;
         button.addEventListener('click', () => checkAnswer(button));
+        button.disabled = false;
     });
     nextButton.classList.remove('hide');
     
