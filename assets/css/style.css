@@ -75,7 +75,7 @@ a {
     text-align: center;
 }
 
-
+/* Style the start, next and start-over buttons */
 .btn {
     font-size: 90%;
     padding: 5px 20px;
@@ -150,8 +150,7 @@ a {
     margin: 2% 10%;
 }
 
-/* add hover effect to all the buttons */
-.answer-btns:hover,
+/* add hover effect to start, next and start-over the buttons */
 .btn:hover {
     background: #0b2742;
     color: white;
@@ -160,11 +159,15 @@ a {
 
 /* background-color to display correct/incorrect answer*/
 .correct {
-    background:#32a83a;
+    background:#227521;
+    color: black;
+    border: none;
 }
 
 .incorrect {
-    background: #bf0a0a;
+    background: #9c1c14;
+    color: black;
+    border: none;
 }
 /*
 #answer-btns {
