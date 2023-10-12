@@ -139,6 +139,7 @@ function showAnswers(answers) {
     
 }
 
+// Increments the score if answer is correct
 function checkAnswer(button) {
     const isCorrect = button.dataset.correct === 'true';
 
@@ -150,6 +151,14 @@ function checkAnswer(button) {
         button.classList.add('incorrect');
     }
     button.disabled = true;
+    /**
+     * Adds a short delay before moving on to the next question
+     * so the user have time to see if the answer was correct or not
+     */
+    setTimeout(() => {
+        nextButton.click();
+    }, 1000);
+   
 }
 
 
