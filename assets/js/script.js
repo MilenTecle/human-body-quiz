@@ -150,7 +150,11 @@ function showAnswers(answers) {
     
 }
 
-// Increments the score if answer is correct
+/**
+ * Increment the score if answer is correct.
+ * Displays green color if correct, and red color if incorrect
+ * The for each loop will disable all the buttons
+ */
 function checkAnswer(button) {
     const isCorrect = button.dataset.correct === 'true';
     const buttons = Array.from(answerButtons.children);
@@ -168,17 +172,17 @@ function checkAnswer(button) {
     /**
      * Adds a short delay before moving on to the next question
      * so the user have time to see if the answer was correct or not
-    
+    */
     setTimeout(() => {
         nextButton.click();
-    }, 1000); */
+    }, 1000); 
    
 }
 
 
 
 
-// Quiz questions
+// Easy questions
 const questionsEasy = [
     { //Question 1
         question: "What is the largest organ in the human body?",
@@ -217,21 +221,21 @@ const questionsEasy = [
         ]
     },
     { //Question 5
-        question: "What is the smallest unit of a muscle fiber?",
+        question: "Which gas do humans primarily exhale when they breathe out?",
         answers: [
-            { text: "Myocardium", correct: false},
-            { text: "Sarcomere", correct: true},
-            { text: "Tendon", correct: false},
-            { text: "Ligament", correct: false},
+            { text: "Oxygen", correct: false},
+            { text: "Carbon dioxide", correct: true},
+            { text: "Nitrogen", correct: false},
+            { text: "Hydrogen", correct: false},
         ]
     },
     { //Question 6
-        question: "Which part of the brain is responsible for regulating basic life functions like breathing and heartbeat?",
+        question: "Which part of the human body is commonly referred to as the 'windpipe' and carries air to the lungs?",
         answers: [
-            { text: "Medulla oblongata", correct: true},
-            { text: "Frontal lobe", correct: false},
-            { text: "Cerebellum", correct: false},
-            { text: "Thalamus", correct: false},
+            { text: "Esophagus", correct: false},
+            { text: "Bronchus", correct: false},
+            { text: "Trachea", correct: true},
+            { text: "Diaphragm", correct: false},
         ]
     },
     { //Question 7
@@ -253,6 +257,47 @@ const questionsEasy = [
         ]
     },
     { //Question 9
+        question: "What is the name of the pigment responsible for the color of human skin, hair, and eyes?",
+        answers: [
+            { text: "Hemoglobin", correct: false},
+            { text: "Carotene", correct: false},
+            { text: "Melanin", correct: true},
+            { text: "Collagen", correct: false,}
+        ]
+    },
+    { //Question 10
+        question: "Which of the following is not a taste sensation detected by the taste buds on the human tongue?",
+        answers: [
+            { text: "Sweet", correct: false},
+            { text: "Sour", correct: false},
+            { text: "Umami", correct: false},
+            { text: "Crunchy", correct: true,}
+        ]
+    },
+]
+
+
+//Medium questions
+const questionsMedium = [
+    { //Question 1
+        question: "Which of the following bones is the longest in the human body?",
+        answers: [
+            { text: "Femur", correct: true},
+            { text: "Tibia", correct: false},
+            { text: "Radius", correct: false},
+            { text: "Ulna", correct: false},
+        ]
+    },
+    { //Question 2
+        question: "Which of the following is not a type of white blood cell?",
+        answers: [
+            { text: "Neutrophil", correct: false},
+            { text: "Lymphocyte", correct: false},
+            { text: "Erythrocyte", correct: true},
+            { text: "Monocyte", correct: false,}
+        ]
+    },
+    { //Question 3
         question: "Which gland in the human body regulates metabolism?",
         answers: [
             { text: "Thyroid gland", correct: true},
@@ -261,7 +306,7 @@ const questionsEasy = [
             { text: "Pituitary gland", correct: false,}
         ]
     },
-    { //Question 10
+    { //Question 4
         question: "What is the function of the cochlea in the ear?",
         answers: [
             { text: "Balancing", correct: false},
@@ -270,7 +315,152 @@ const questionsEasy = [
             { text: "Tasting", correct: false,}
         ]
     },
+      //Question 5
+    {   question: "What is the primary function of the cerebellum in the brain?",
+        answers: [
+            { text: "Memory storage", correct: false},
+            { text: "Vision processing", correct: false},
+            { text: "Emotional regulation", correct: false},
+            { text: "Balance and coordination", correct: true,}
+        ]
+    },
+    //Question 6
+    {   question: "Which part of the human eye allows us to see in dim light and is responsible for black and white vision?",
+        answers: [
+            { text: "Iris", correct: false},
+            { text: "Retina", correct: true},
+            { text: "Cornea", correct: false},
+            { text: "Sclera", correct: false,}
+        ]
+    },
+    //Question 7
+    {   question: "What is the medical term for the 'voice box' located in the human throat?",
+        answers: [
+            { text: "Larynx", correct: true},
+            { text: "Pharynx", correct: false},
+            { text: "Trachea", correct: false},
+            { text: "Esophagus", correct: false,}
+        ]
+    },
+    { //Question 8
+        question: "Which part of the brain is responsible for regulating basic life functions like breathing and heartbeat?",
+        answers: [
+            { text: "Medulla oblongata", correct: true},
+            { text: "Frontal lobe", correct: false},
+            { text: "Cerebellum", correct: false},
+            { text: "Thalamus", correct: false},
+        ]
+    },
+    { //Question 9
+        question: "What is the smallest unit of a muscle fiber?",
+        answers: [
+            { text: "Myocardium", correct: false},
+            { text: "Sarcomere", correct: true},
+            { text: "Tendon", correct: false},
+            { text: "Ligament", correct: false},
+        ]
+    },
+    { //Question 10
+        question: "What is the name of the liquid that lubricates joints and helps reduce friction between bones?",
+        answers: [
+            { text: "Mucus", correct: false},
+            { text: "Lymph", correct: false},
+            { text: "Bile", correct: false},
+         { text: "Synovial fluid", correct: true},
+        ]
+    },
 ]
 
-
-
+//Hard questions
+const questionsHard = [
+    { //Question 1
+        question: "What is the medical term for the voice disorder characterized by the involuntary shaking or trembling of the vocal cords during speech?",
+        answers: [
+            { text: "Dysphagia", correct: false},
+            { text: "Aphonia", correct: false},
+            { text: "Dysarthria", correct: false},
+            { text: "Spasmodic dysphonia", correct: true},
+        ]
+    },
+    { //Question 2
+        question: "In the human brain, what is the primary role of the prefrontal cortex, which is responsible for higher-level cognitive functions?",
+        answers: [
+            { text: "Memory storage", correct: false},
+            { text: "Motor coordination", correct: false},
+            { text: "Decision-making and personality", correct: true},
+            { text: "Visual processing", correct: false,}
+        ]
+    },
+    { //Question 3
+        question: "What is the rare, hereditary disorder that causes the body to produce abnormally thick mucus, affecting the respiratory and digestive systems?",
+        answers: [
+            { text: "Cystic fibrosis", correct: true},
+            { text: "Huntington's disease", correct: false},
+            { text: "Hemophilia", correct: false},
+            { text: "Tay-Sachs disease", correct: false,}
+        ]
+    },
+    { //Question 4
+        question: "Which of the following blood types is considered the universal recipient, meaning it can receive blood from any blood type?",
+        answers: [
+            { text: "A+", correct: false},
+            { text: "AB+", correct: true},
+            { text: "O+", correct: false},
+            { text: "B-", correct: false,}
+        ]
+    },
+      //Question 5
+    {   question: "What is the medical term for the condition where there is a loss of bone density, leading to brittle and fragile bones?",
+        answers: [
+            { text: "Arthritis", correct: false},
+            { text: "Osteoarthritis", correct: false},
+            { text: "Osteoporosis", correct: true},
+            { text: "Rheumatoid arthritis", correct: false,}
+        ]
+    },
+    //Question 6
+    {   question: "The pineal gland in the brain is responsible for the secretion of which hormone that helps regulate the body's circadian rhythm?",
+        answers: [
+            { text: "Melatonin", correct: true},
+            { text: "Insulin", correct: false},
+            { text: "Growth hormone", correct: false},
+            { text: "Calcitonin", correct: false,}
+        ]
+    },
+    //Question 7
+    {   question: "Which of the following glands is known as the 'master gland' and controls the functions of other endocrine glands in the body?",
+        answers: [
+            { text: "Thyroid gland", correct: false},
+            { text: "Pituitary gland", correct: true},
+            { text: "Adrenal gland", correct: false},
+            { text: "Parathyroid gland", correct: false,}
+        ]
+    },
+    { //Question 8
+        question: "What is the condition in which the body's immune system attacks its own healthy tissues and organs, resulting in inflammation and damage?",
+        answers: [
+            { text: "Multiple sclerosis", correct: false},
+            { text: "Rheumatoid arthritis", correct: false},
+            { text: "Crohn's disease", correct: false},
+            { text: "Lupus", correct: true},
+        ]
+    },
+    { //Question 9
+        question: "The cranial nerve responsible for the sense of smell is known as:",
+        answers: [
+            { text: "Vestibulocochlear nerve", correct: false},
+            { text: "Optic nerve", correct: false},
+            { text: "Trigeminal nerve", correct: false},
+            { text: "Olfactory nerve", correct: true},
+        ]
+    },
+    { //Question 10
+        question: "The condition known as 'amblyopia' is often referred to by what common name?",
+        answers: [
+            { text: "Lazy eye", correct: true},
+            { text: "Nearsightedness", correct: false},
+            { text: "Farsightedness", correct: false},
+            { text: "Color blindness", correct: false},
+        ]
+    },
+]
