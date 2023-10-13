@@ -34,6 +34,7 @@ const infoText = document.getElementById('about-text');
 infoText.addEventListener('click', howToPlay);
 
 function howToPlay() {
+   
     if (infoText.style.display === 'none') {
         infoText.style.display = 'inline-block';
     } else {
