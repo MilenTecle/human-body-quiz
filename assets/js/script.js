@@ -64,16 +64,20 @@ let currentQuestionIndex = 0;
 let shuffledQuestions;
 let numberOf = 1;
 let maxQuestions = 10;
+let difficultyLevel;
 
 
-// Event Listeners for each button to start the quiz
-startEasy.addEventListener('click', startTheQuiz);
-startMedium.addEventListener('click', startTheQuiz);
-startHard.addEventListener('click', startTheQuiz);
+/**
+ * Event Listeners for each level button on startpage
+ * and the level being passed to the StartTheQuiz function
+ */
+startEasy.addEventListener('click', () => startTheQuiz('easy'));
+startMedium.addEventListener('click', () => startTheQuiz('medium'));
+startHard.addEventListener('click', () => startTheQuiz('hard'));
 
 
 // Function with the actions once the quiz has started
-function startTheQuiz() {
+function startTheQuiz(level) {
   currentQuestionIndex = 0;
   score = 0;
   startEasy.classList.add('hide');
@@ -83,8 +87,16 @@ function startTheQuiz() {
   resultBoard.classList.add('hide');
   quizBoard.classList.remove('hide');
 
-  // Sort method to shuffle the questions is used from:https://www.youtube.com/watch?v=riDzcEQbX6k
-  shuffledQuestions = questionsEasy.sort(() => Math.random() - .5);
+//This will set the correct array of questions upon start
+ if (level === 'easy') {
+    difficultyLevel = questionsEasy;
+ } else if (level === 'medium')  {
+    difficultyLevel = questionsMedium;
+ } else if (level === 'hard') {
+    difficultyLevel = questionsHard;
+ }
+ // The questions will be presented in a randomized order
+  shuffledQuestions = difficultyLevel.sort(() => Math.random() - .5);
   presentQuestions();
 }
 
@@ -99,6 +111,10 @@ function presentQuestions() {
 
     resetAnswers();
 
+    /** Iterates through the an array with answers 
+     * Creates the answer buttons with corresponding CSS
+     * Sets the text content of the corresponding answer to the butotn
+    */
     currentQuestion.answers.forEach(answers => {
         const button = document.createElement("button");
         button.textContent = answers.text;
@@ -113,7 +129,7 @@ nextButton.addEventListener('click', nextQuestion);
 
 function nextQuestion() {
     currentQuestionIndex += 1;
-    if(currentQuestionIndex < questionsEasy.length) {
+    if(currentQuestionIndex < shuffledQuestions.length) {
         resetAnswers();
         presentQuestions();
     } else {
@@ -161,7 +177,7 @@ function checkAnswer(button) {
 
     if(isCorrect) {
         button.classList.add('correct');
-        score++
+        score++;
         countScore.textContent = `Score: ${score}/10`;
     } else {
         button.classList.add('incorrect');
@@ -185,6 +201,7 @@ function checkAnswer(button) {
 // Easy questions
 const questionsEasy = [
     { //Question 1
+        level: 'easy',
         question: "What is the largest organ in the human body?",
         answers: [
             { text: "Heart", correct: false},
@@ -274,12 +291,13 @@ const questionsEasy = [
             { text: "Crunchy", correct: true,}
         ]
     },
-]
+];
 
 
 //Medium questions
 const questionsMedium = [
     { //Question 1
+        level: 'medium',
         question: "Which of the following bones is the longest in the human body?",
         answers: [
             { text: "Femur", correct: true},
@@ -369,11 +387,12 @@ const questionsMedium = [
          { text: "Synovial fluid", correct: true},
         ]
     },
-]
+];
 
 //Hard questions
 const questionsHard = [
     { //Question 1
+        level: 'hard',
         question: "What is the medical term for the voice disorder characterized by the involuntary shaking or trembling of the vocal cords during speech?",
         answers: [
             { text: "Dysphagia", correct: false},
@@ -463,4 +482,4 @@ const questionsHard = [
             { text: "Color blindness", correct: false},
         ]
     },
-]
+];
