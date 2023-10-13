@@ -44,7 +44,10 @@ function howToPlay() {
 
 
 //Connect the html id:s and elements to variables
-const startQuiz = document.getElementById('start-button');
+const startEasy= document.getElementById('start-easy');
+const startMedium = document.getElementById('start-medium');
+const startHard = document.getElementById('start-hard');
+
 const quizBoard = document.getElementById('quiz-board');
 const answerButtons = document.getElementById('answer-btns');
 const nextButton = document.getElementById('next-button');
@@ -63,18 +66,25 @@ let numberOf = 1;
 let maxQuestions = 10;
 
 
-// Event Listener to start the quiz
-startQuiz.addEventListener('click', startTheQuiz)
+// Event Listeners for each button to start the quiz
+startEasy.addEventListener('click', startTheQuiz);
+startMedium.addEventListener('click', startTheQuiz);
+startHard.addEventListener('click', startTheQuiz);
 
+
+// Function with the actions once the quiz has started
 function startTheQuiz() {
   currentQuestionIndex = 0;
   score = 0;
-  startQuiz.classList.add('hide');
+  startEasy.classList.add('hide');
+  startMedium.classList.add('hide');
+  startHard.classList.add('hide');
   welcomeId.classList.add('hide');
   resultBoard.classList.add('hide');
   quizBoard.classList.remove('hide');
+
   // Sort method to shuffle the questions is used from:https://www.youtube.com/watch?v=riDzcEQbX6k
-  shuffledQuestions = questions.sort(() => Math.random() - .5);
+  shuffledQuestions = questionsEasy.sort(() => Math.random() - .5);
   presentQuestions();
 }
 
@@ -95,7 +105,7 @@ function presentQuestions() {
         button.classList.add("answer-btns");
         answerButtons.appendChild(button);
     });
-    showAnswers(currentQuestion.answers);
+   showAnswers(currentQuestion.answers);
 }
 
 //Next question
@@ -103,9 +113,9 @@ nextButton.addEventListener('click', nextQuestion);
 
 function nextQuestion() {
     currentQuestionIndex += 1;
-    if(currentQuestionIndex < questions.length) {
-    resetAnswers();
-    presentQuestions();
+    if(currentQuestionIndex < questionsEasy.length) {
+        resetAnswers();
+        presentQuestions();
     } else {
         quizBoard.classList.add('hide');
         resultBoard.classList.remove('hide');
@@ -143,6 +153,7 @@ function showAnswers(answers) {
 // Increments the score if answer is correct
 function checkAnswer(button) {
     const isCorrect = button.dataset.correct === 'true';
+    const buttons = Array.from(answerButtons.children);
 
     if(isCorrect) {
         button.classList.add('correct');
@@ -151,20 +162,24 @@ function checkAnswer(button) {
     } else {
         button.classList.add('incorrect');
     }
-    button.disabled = true;
+    buttons.forEach((button) => {
+        button.disabled = true;
+    });
     /**
      * Adds a short delay before moving on to the next question
      * so the user have time to see if the answer was correct or not
-     */
+    
     setTimeout(() => {
         nextButton.click();
-    }, 1000);
+    }, 1000); */
    
 }
 
 
+
+
 // Quiz questions
-const questions = [
+const questionsEasy = [
     { //Question 1
         question: "What is the largest organ in the human body?",
         answers: [

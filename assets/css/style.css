@@ -58,8 +58,8 @@ a {
 .welcome {
     border: 1px solid rgb(159, 197, 248);
     background-color: rgba(159, 197, 248, 0.8);
-    max-width: 60%;
-    height: 40%;
+    max-width: 70%;
+    height: 50%;
     top: 45%;
     position: absolute;
     display: flex;
@@ -85,6 +85,11 @@ a {
     margin: 0 auto;
 }
 
+.start {
+    width: 80%;
+    padding: 8px 20px;
+}
+
 .next {
     margin: 7% auto;
 }
@@ -94,7 +99,7 @@ a {
 .start-quiz {
     display: flex;
     justify-content: center;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 /* Styles related to the quiz */
@@ -102,9 +107,9 @@ a {
 .quiz-content{
         border: 1px solid rgb(159, 197, 248);
         background: rgba(159, 197, 248, 0.8);
-        max-width: 60%;
-        height: 50%;
-        top: 45%;
+        max-width: 70%;
+        height: 60%;
+        top: 35%;
         position: relative;
 }
 
