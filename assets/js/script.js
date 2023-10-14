@@ -60,6 +60,7 @@ const scoreNumber = document.getElementById('scorenumber');
 const finishedText = document.getElementById('feedback-text');
 const welcomeId = document.getElementById('welcome-id');
 
+
 let score = 0;
 let currentQuestionIndex = 0;
 let shuffledQuestions;
@@ -163,8 +164,6 @@ function showAnswers(answers) {
         button.addEventListener('click', () => checkAnswer(button));
         button.disabled = false;
     });
-    nextButton.classList.remove('hide');
-    
 }
 
 /**
@@ -181,7 +180,13 @@ function checkAnswer(button) {
         score++;
         countScore.textContent = `Score: ${score}/10`;
     } else {
+        buttons.forEach((button) => {
+            if(button.dataset.correct === 'true') {
+                button.classList.add('correct');  
+            }    
+        });
         button.classList.add('incorrect');
+        
     }
     buttons.forEach((button) => {
         button.disabled = true;
@@ -189,11 +194,11 @@ function checkAnswer(button) {
     /**
      * Adds a short delay before moving on to the next question
      * so the user have time to see if the answer was correct or not
-    */
+    
     setTimeout(() => {
         nextButton.click();
     }, 1000); 
-   
+   */
 }
 
 

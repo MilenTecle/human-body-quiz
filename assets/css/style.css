@@ -104,6 +104,13 @@ a {
     margin: 7% auto;
 }
 
+/*The button will go back go default css after click */
+.btn.next:active {
+    background: whitesmoke;
+    color: black;
+    border: 1px solid white;
+}
+
 
 /* Start quiz button */
 .start-quiz {
