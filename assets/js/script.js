@@ -28,19 +28,9 @@ soundOff.addEventListener('click', playSound);
 soundOn.style.display = 'none';
 
 /**
- * Function to display info-text when user clicks on the i/about-button
-
-const infoText = document.getElementById('about-text');
-infoText.addEventListener('click', howToPlay);
-
-function howToPlay() {
-   
-    if (infoText.style.display === 'none') {
-        infoText.style.display = 'inline-block';
-    } else {
-        infoText.style.display = 'none';
-    }
-}
+ * Function to display instructions in a modal-box when user clicks on the i/about-button
+ * When user clicks on the x or outside of the window
+ * the modal-box will close
  */
 
 const modalBox = document.getElementById('modal-box');

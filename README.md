@@ -217,9 +217,32 @@ The live link can be found here - [The Human Body Quiz](https://milentecle.githu
 ## Credits
 
 ### Code
+ - I used code from here to create the playSound function: 
+  https://stackoverflow.com/questions/33663740/play-sound-and-change-play-icon-to-stop-icon-on-click
+  https://stackoverflow.com/questions/33671577/click-in-icon-play-to-start-sound-then-click-stop-icon-to-stop-sound
+  https://dev.to/shantanu_jana/how-to-play-sound-on-button-click-in-javascript-3m48
+ 
+ - I used some of this code to create a modal box and to make it work accordingly: https://www.w3schools.com/howto/howto_css_modals.asp.
+ 
  - I used code from this video to accurately create the answer buttons and create the text found in my PresentQuestions function. I also used code from the same video to reset the answers with a while loop, found in my resetAnswers function: https://www.youtube.com/watch?v=PBcqGxrr9g8.
 
  - I used code from this video to sort the questions in a randomized order with the sort method: https://www.youtube.com/watch?v=riDzcEQbX6k. I also used code from the same video to connect right and wrong answers to the corresponing answers buttons.
+
+ - I used these as inspiration to better understand how to use existing code when connecting the logic for the difficulty buttons and questions: 
+  https://stackoverflow.com/questions/52210163/how-to-generate-new-object-while-using-the-same-methods.
+  https://stackoverflow.com/questions/53766944/simple-quiz-with-different-levels-divs
+  https://stackoverflow.com/questions/55855497/how-to-create-a-quiz-that-has-different-questions-on-different-pages
+
+ - I used this to better understand how to disable the answer buttons: https://alvarotrigo.com/blog/disable-button-javascript/
+
+- I used these videos in general to understand the full concept of creating a quiz:
+  https://www.youtube.com/watch?v=PBcqGxrr9g8
+  https://www.youtube.com/watch?v=riDzcEQbX6k
+  https://www.youtube.com/watch?v=_LYxkClHnV0
+  https://www.shecodes.io/athena/59004-how-to-create-a-standard-quiz-with-html-css-and-javascript
+  https://stackoverflow.com/questions/75575841/how-can-i-initiate-a-quiz-by-clicking-on-a-button-in-javascript
+  https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp
+ 
 
 ### Content
  - 
