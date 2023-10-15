@@ -36,48 +36,55 @@ nav {
     padding-left: 10px;
 }
 
-/* The modal */
+/* The modal box styles */
 .modal {
     display: none;
     position: fixed;
     z-index: 1;
     left: 0;
-    top: 0;
+    top: 25%;
     width: 100%;
     height: 100%;
-    background: whitesmoke;
+   
 }
 
 .modal-text {
-    background: black;
+    background: rgb(159, 197, 248);
     margin: 10% auto;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid rgb(159, 197, 248);
     border-radius: 4px;
     width: 70%;
+    height: 50%;
     position: relative;
 
 }
 
-.close {
-    font-size: 120%;
-    cursor: pointer;
-    
+.modal-text p {
+    text-align: left;
 }
+
+#instructions {
+    font-size: 1.3rem;
+    text-align: center;
+}
+.close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    font-weight: bold;
+}
+
+#close-box {
+    display: flex;
+    justify-content: flex-end;
+}
+
 #info-btn {
     font-size: 70%;
     font-family: Lato;
 }
 
-/*
-.how-to-play {
-    background: whitesmoke;
-    padding: 15% 5%;
-    position: relative;
-    margin-top: 50%;
-    z-index: 10;
-}
-*/
 
 /*Change the font awesome logo color*/
 i {
