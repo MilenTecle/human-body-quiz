@@ -182,7 +182,8 @@ function showAnswers(answers) {
 /**
  * Increment the score if answer is correct.
  * Displays green color if correct, and red color if incorrect
- * The for each loop will disable all the buttons
+ * The for each loop will disable all the answer buttons
+ * once the user has clicked on an answer
  */
 function checkAnswer(button) {
     const isCorrect = button.dataset.correct === 'true';
@@ -201,17 +202,18 @@ function checkAnswer(button) {
         button.classList.add('incorrect');
         
     }
+
     buttons.forEach((button) => {
         button.disabled = true;
     });
     /**
      * Adds a short delay before moving on to the next question
      * so the user have time to see if the answer was correct or not
-    
+    */
     setTimeout(() => {
         nextButton.click();
     }, 1000); 
-   */
+   
 }
 
 

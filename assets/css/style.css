@@ -4,7 +4,6 @@
 * {
     padding: 0;
     margin: 0;
-    overflow: hidden;
 }
 
 body {
@@ -55,14 +54,14 @@ nav {
     border: 1px solid rgb(159, 197, 248);
     border-radius: 4px;
     width: 80%;
-    height: fit-content;
+    height: 70%;
     position: relative;
 
 }
 
 .modal-text p {
     text-align: left;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 #about-text {
@@ -71,11 +70,15 @@ nav {
 }
 
 ol, #instructions {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
-ol {
-    list-style-type: decimal;
+ol li {
+    margin: 6px;
+}
+
+#intro-end {
+    margin-top: -5px;
 }
 
 .close {
@@ -127,8 +130,12 @@ a {
 }
 
 #text, p {
-    margin-top: 10%;
+    margin: 10% 10%;
     text-align: center;
+}
+
+#intro {
+    margin: 5%;
 }
 
 /* Style the start, next and start-over buttons */
@@ -151,14 +158,6 @@ a {
     margin: 7% auto;
 }
 
-/*The button will go back go default css after click */
-.btn.next:active {
-    background: whitesmoke;
-    color: black;
-    border: 1px solid white;
-}
-
-
 /* Start quiz button */
 .start-quiz {
     display: flex;
@@ -173,8 +172,8 @@ a {
         border: 1px solid rgb(159, 197, 248);
         background: rgba(159, 197, 248, 0.8);
         max-width: 80%;
-        height: fit-content;
-        top: 35%;
+        height: 60%;
+        top: 25%;
         position: relative;
 }
 
@@ -248,18 +247,7 @@ a {
     color: black;
     border: none;
 }
-/*
-#answer-btns {
-    font-size: 90%;
-    padding: 5px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 60%;
-    max-width: 50%;
-    height: 30%;
-    top: 45%;
-}
-/*
+
 /* Hide the start-button and welcome text */
 .hide {
     display: none;
