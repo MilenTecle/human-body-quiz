@@ -29,7 +29,7 @@ soundOn.style.display = 'none';
 
 /**
  * Function to display info-text when user clicks on the i/about-button
- */
+
 const infoText = document.getElementById('about-text');
 infoText.addEventListener('click', howToPlay);
 
@@ -41,14 +41,34 @@ function howToPlay() {
         infoText.style.display = 'none';
     }
 }
+ */
+
+const modalBox = document.getElementById('modal-box');
+const infoButton = document.getElementById('info-btn');
+const closeButton = document.getElementById('close-box');
+
+infoButton.addEventListener('click', openModal);
+closeButton.addEventListener('click', closeModal);
+
+function openModal () {
+    modalBox.style.display = 'inline-block';
+}
+
+function closeModal () {
+    modalBox.style.display = 'none';
+}
 
 
+window.addEventListener('click', function (event) {
+    if (event.target === modalBox) {
+        closeModal();
+    }
+});
 
 //Connect the html id:s and elements to variables
 const startEasy= document.getElementById('start-easy');
 const startMedium = document.getElementById('start-medium');
 const startHard = document.getElementById('start-hard');
-
 const quizBoard = document.getElementById('quiz-board');
 const answerButtons = document.getElementById('answer-btns');
 const nextButton = document.getElementById('next-button');
