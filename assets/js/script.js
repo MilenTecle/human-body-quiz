@@ -1,11 +1,14 @@
 
 /**
  * Change the sound icon when user clicks on it
- * and play sound and vice versa.
+ * and play sound. When use clicks again the
+ * sound will be muted.
  */
 const audio = new Audio('assets/audio/heartbeat-sound.mp3');
 const soundOn = document.getElementById('sound-on');
 const soundOff = document.getElementById('sound-off');
+
+audio.loop = true;
 
 function playSound() {
     if (audio.paused) {
