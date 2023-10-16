@@ -256,26 +256,28 @@ a {
 
 /* footer */
 footer {
-    background-color: black;
-    position:fixed;
+    position:absolute;
     width: 100%;
     bottom: 0;
-    z-index: 99;
-}
-
-#social-media {
+    justify-content: center;
     display: flex;
-    justify-content: space-evenly;
-    font-size: 110%;
-    list-style-type: none;
 }
 
-#social-media i:hover {
+#footer-text {
+    color: white;
+    margin: 0;
+}
+
+.social-media {
+    font-size: 90%;
+}
+
+.social-media i:hover {
     padding: 0;
     color: white;
 }
 
-#social-media a {
+.social-media a {
     color: white;
 }
 
