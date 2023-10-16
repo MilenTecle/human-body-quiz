@@ -67,6 +67,7 @@ const startHard = document.getElementById('start-hard');
 const quizBoard = document.getElementById('quiz-board');
 const answerButtons = document.getElementById('answer-btns');
 const nextButton = document.getElementById('next-button');
+const homeButton = document.getElementById('home-button')
 const questionArea = document.getElementById('question-area');
 const questionQuiz = document.getElementById('questions');
 const countScore = document.getElementById('score');

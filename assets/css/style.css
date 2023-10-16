@@ -42,7 +42,7 @@ nav {
     position: fixed;
     z-index: 1;
     left: 0;
-    top: 8%;
+    top: 15%;
     width: 100%;
     height: 100%;
    
@@ -55,7 +55,7 @@ nav {
     border: 1px solid rgb(248, 228, 204);
     border-radius: 4px;
     width: 80%;
-    height: 80%;
+    height: auto;
     position: relative;
 
 }
@@ -75,12 +75,13 @@ ol, #instructions {
 }
 
 ol li {
-    margin: 10px;
-    font-size: 90%;
+    margin: 5%;
+    font-size: 0.8rem;
 }
 
 #intro-end {
     margin-top: -5px;
+    font-size: 0.8rem;
 }
 
 .close {
@@ -120,7 +121,7 @@ a {
     background-color: rgba(143, 188, 219, 0.9);
     max-width: 80%;
     height: 60%;
-    top: 30%;
+    top: 32%;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -156,8 +157,9 @@ a {
     padding: 8px 20px;
 }
 
-.next {
-    margin: 7% auto;
+.next-home {
+    display: flex;
+    margin: 15%;
 }
 
 /* Start quiz button */
@@ -175,7 +177,7 @@ a {
         background: rgba(143, 188, 219);
         max-width: 80%;
         height: 60%;
-        top: 30%;
+        top: 28%;
         position: relative;
 }
 
@@ -269,6 +271,10 @@ footer {
     margin: 0;
 }
 
+#footer-p {
+    padding-left: 10px;
+}
+
 .social-media {
     font-size: 90%;
 }
@@ -280,5 +286,6 @@ footer {
 
 .social-media a {
     color: white;
+    font-size: 70%;
 }
 
