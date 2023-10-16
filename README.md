@@ -235,6 +235,8 @@ The live link can be found here - [The Human Body Quiz](https://milentecle.githu
 
  - I used this to better understand how to disable the answer buttons: https://alvarotrigo.com/blog/disable-button-javascript/
 
+ - I used parts of this code to create the overlay effect: https://www.w3schools.com/howto/howto_css_overlay.asp
+
 - I used these videos in general to understand the full concept of creating a quiz:
   https://www.youtube.com/watch?v=PBcqGxrr9g8
   https://www.youtube.com/watch?v=riDzcEQbX6k

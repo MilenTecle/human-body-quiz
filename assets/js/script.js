@@ -40,6 +40,7 @@ const modalBox = document.getElementById('modal-box');
 const infoIcon = document.getElementById('info-icon')
 const infoButton = document.getElementById('info-btn');
 const closeButton = document.getElementById('close-box');
+const overlay = document.getElementById('overlay')
 
 infoButton.addEventListener('click', openModal);
 infoIcon.addEventListener('click', openModal);
@@ -47,15 +48,17 @@ closeButton.addEventListener('click', closeModal);
 
 function openModal () {
     modalBox.style.display = 'inline-block';
+    overlay.style.display = 'inline-block';
 }
 
 function closeModal () {
     modalBox.style.display = 'none';
+    overlay.style.display = 'none';
 }
 
 
 window.addEventListener('click', function (event) {
-    if (event.target === modalBox) {
+    if (event.target === overlay) {
         closeModal();
     }
 });
