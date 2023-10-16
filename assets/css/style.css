@@ -13,6 +13,7 @@ body {
     background-image: url('../images/background-image.webp');
     display: flex;
     justify-content: center;
+    overflow: hidden;
 }
 
 header {
@@ -48,10 +49,10 @@ nav {
 }
 
 .modal-text {
-    background: rgb(159, 197, 248);
+    background: rgb(248, 228, 204);
     margin: 10% auto;
     padding: 10px;
-    border: 1px solid rgb(159, 197, 248);
+    border: 1px solid rgb(248, 228, 204);
     border-radius: 4px;
     width: 80%;
     height: 70%;
@@ -74,7 +75,7 @@ ol, #instructions {
 }
 
 ol li {
-    margin: 6px;
+    margin: 10px;
 }
 
 #intro-end {
@@ -114,8 +115,8 @@ a {
 
 /* textblock on landing page*/
 .welcome {
-    border: 1px solid rgb(159, 197, 248);
-    background-color: rgba(159, 197, 248, 0.8);
+    border: 1px solid rgb(143, 188, 219);
+    background-color: rgba(143, 188, 219, 0.9);
     max-width: 80%;
     height: 60%;
     top: 35%;
@@ -169,11 +170,11 @@ a {
 /* Styles related to the quiz */
 .question-div,
 .quiz-content{
-        border: 1px solid rgb(159, 197, 248);
-        background: rgba(159, 197, 248, 0.8);
+        border: 1px solid rgb(143, 188, 219);
+        background: rgba(143, 188, 219);
         max-width: 80%;
         height: 60%;
-        top: 25%;
+        top: 30%;
         position: relative;
 }
 
