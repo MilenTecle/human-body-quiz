@@ -37,10 +37,12 @@ soundOn.style.display = 'none';
  */
 
 const modalBox = document.getElementById('modal-box');
+const infoIcon = document.getElementById('info-icon')
 const infoButton = document.getElementById('info-btn');
 const closeButton = document.getElementById('close-box');
 
 infoButton.addEventListener('click', openModal);
+infoIcon.addEventListener('click', openModal);
 closeButton.addEventListener('click', closeModal);
 
 function openModal () {
