@@ -159,7 +159,12 @@ a {
 
 .next-home {
     display: flex;
-    margin: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.next-home button {
+    margin: 10% 10px;
 }
 
 /* Start quiz button */
