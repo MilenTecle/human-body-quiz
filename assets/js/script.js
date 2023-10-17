@@ -78,6 +78,7 @@ const resultBoard = document.getElementById('results');
 const scoreNumber = document.getElementById('scorenumber');
 const finishedText = document.getElementById('feedback-text');
 const welcomeId = document.getElementById('welcome-id');
+const footerText = document.getElementById('footer-text');
 
 
 let score = 0;
@@ -107,6 +108,7 @@ function startTheQuiz(level) {
   welcomeId.classList.add('hide');
   resultBoard.classList.add('hide');
   quizBoard.classList.remove('hide');
+  footerText.classList.add('hide');
 
 //This will set the correct array of questions upon start
  if (level === 'easy') {
