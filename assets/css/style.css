@@ -55,6 +55,7 @@ nav {
     border: 1px solid rgb(248, 228, 204);
     border-radius: 4px;
     width: 80%;
+    max-width: 500px;
     height: auto;
     position: relative;
 
@@ -305,3 +306,29 @@ footer {
     font-size: 70%;
 }
 
+/* Media queries */
+
+/* Media query for tablets and larger screens */
+
+@media screen and (min-width: 768px) {
+   /* Font size modal box */
+    ol li {
+        font-size: 1.2rem;
+    }
+
+    .close, #text {
+        font-size: 2rem;
+    }
+
+    #intro-end, .social-media  {
+        font-size: 1.2rem
+    }
+
+    #instructions, #text-p {
+        font-size: 1.5rem;
+    }
+
+    .welcome {
+        max-width: 60%;
+    }
+}
