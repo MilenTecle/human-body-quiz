@@ -179,6 +179,12 @@ a {
     margin: 10% 10px;
 }
 
+#next-button:hover {
+    background: whitesmoke;
+    color: black;
+    border: 1px solid white;
+}
+
 /* Start quiz button */
 .start-quiz {
     display: flex;
