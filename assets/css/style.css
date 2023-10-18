@@ -311,6 +311,50 @@ footer {
 
 /* Media queries */
 
+
+/* For landscape view on mobile devices and ipad */
+@media screen and (orientation: landscape) and (min-width: 667px){
+    #text-container{
+        margin-top: -10%;
+    }
+
+    .welcome {
+        top: 20%;
+        height: 72%;
+        width: 40%;
+    }
+
+    .start {
+        font-size: 0.6rem;
+    }
+
+    #text, p {
+        font-size: 1rem;
+    }
+
+    #intro-end {
+        margin-top: -5px;
+        margin-bottom: 0;
+    }
+
+    #instructions {
+        margin-top: -5px;
+        font-size: 0.8rem;
+    }
+    ol li {
+        font-size: 0.6rem;
+        margin: 8px;
+    }
+
+    .modal-text {
+        margin-top: -5%;
+        width: 35%;
+    }
+}
+
+
+
+
 @media screen and (min-width: 576px) {
    /* Welcome-container on startpage quiz container */
      .welcome,
@@ -318,13 +362,27 @@ footer {
          max-width: 400px;
      }
 
+     /*
      .start {
+        font-size: 1rem;
+     }*/
+    /* Modal box font size and container width*/
+     
+    /*
+    #text-p,
+     #instructions {
+        font-size: 1.2rem;
+     }*/
+
+     ol li,
+     #intro-end {
         font-size: 1rem;
      }
 
-     #text-p {
-        font-size: 1.2rem;
+     .modal-text {
+        width: 60%;
      }
+     
     }
 
 
@@ -367,11 +425,16 @@ footer {
         margin-top: -10%;
     }
     
-    /* Welcome-container on startpage and quiz container*/
-    .welcome,
-    .question-div {
+    /* Welcome-container on startpage */ 
+    .welcome {
          max-width: 420px;
          height: 63%;
+     }
+     /* Quiz container*/
+     .question-div {
+        max-width: 420px;
+        height: 63%;
+        font-size: 1.2rem;
      }
 
     .social-media {
