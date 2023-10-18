@@ -313,9 +313,16 @@ footer {
 
 
 /* For landscape view on mobile devices and ipad */
-@media screen and (orientation: landscape) and (min-width: 667px){
+@media screen and (orientation: landscape){
+    
+    /* Welcome container*/
     #text-container{
         margin-top: -10%;
+        font-size: 0.8rem;
+    }
+
+    .welcome #text-p {
+        font-size: 0.7rem;
     }
 
     .welcome {
@@ -324,31 +331,43 @@ footer {
         width: 40%;
     }
 
-    .start {
-        font-size: 0.6rem;
+    #start-easy,
+    #start-medium,
+    #start-hard {
+        font-size: 0.7rem;
     }
 
-    #text, p {
-        font-size: 1rem;
-    }
-
-    #intro-end {
-        margin-top: -5px;
-        margin-bottom: 0;
-    }
+    /* Modal box */
 
     #instructions {
         margin-top: -5px;
-        font-size: 0.8rem;
     }
-    list li {
-        font-size: 0.8rem;
+    .modal-text li {
+        font-size: 0.7rem;
         margin: 5px;
     }
 
     .modal-text {
-        margin-top: -5%;
+        margin-top: -10px;
+        max-width: 40%;
+    }
+
+    /*Question div */
+    .question-div,
+    .quiz-content {
+        margin-top: -10%;
+        font-size: 0.8rem;
+        height: 90%;
+    }
+
+    .quiz-content {
         width: 40%;
+        height: 70%;
+        margin-top: -75;
+    }
+
+    .next-home {
+        margin-top: -7%;
     }
 }
 
