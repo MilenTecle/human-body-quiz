@@ -341,14 +341,14 @@ footer {
         margin-top: -5px;
         font-size: 0.8rem;
     }
-    ol li {
-        font-size: 0.6rem;
-        margin: 8px;
+    list li {
+        font-size: 0.8rem;
+        margin: 5px;
     }
 
     .modal-text {
         margin-top: -5%;
-        width: 35%;
+        width: 40%;
     }
 }
 
@@ -362,17 +362,17 @@ footer {
          max-width: 400px;
      }
 
-     /*
+     
      .start {
         font-size: 1rem;
-     }*/
+     }
     /* Modal box font size and container width*/
      
-    /*
+    
     #text-p,
      #instructions {
         font-size: 1.2rem;
-     }*/
+     }
 
      ol li,
      #intro-end {
