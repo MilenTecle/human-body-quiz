@@ -21,10 +21,9 @@ The live link can be found here - [Human Body Quiz](https://milentecle.github.io
 - [Features](#features)
   - [Navigation](#navigation)
   - [The Home Page](#the-home-page)
-  - [The Ceremony Page](#the-ceremony-page)
-  - [About us Page](#about-us-page)
-  - [Contact Page](#contact-page)
   - [Footer](#footer)
+  - [Quiz](#quiz)
+  - [End Of Quiz](#end-of-quiz)
   - [Features left to implement](#features-left-to-implement)
 
 - [Technologies used](#technologies-used)
@@ -55,16 +54,18 @@ The live link can be found here - [Human Body Quiz](https://milentecle.github.io
 
  ## Site Owner Goals
 
-To give the user an oppurtunity to learn about the human body in a fun and easy way. The purpose of the quiz is educational.
+To give the user an oppurtunity to learn about the human body in a fun and easy way. The purpose of the quiz is educational and it is suitable to everyone. To create curiosity and interest in a way that is easy to understand. Challenge to try something new,  acquire new knowledge and expand knowledge base. For those with an interest in anatomy and the human body, the quiz has different levels of difficulty.
 
 
 ## User Stories
 - ### First time user
-  - As a first time user I want to understand instantly what the quiz is about and how to start without difficulty.
-  - As a first time user I want to be able to choose between different levels, easy, medium and hard.
+  - As a first time user I want to instantly understand what the quiz is about and how to start the quiz without difficulty.
+  - As a first time user I want to be able to choose between different levels; easy, medium and hard.
   - As a first time user I want to be able to play the quiz from different devices.
+  - As a first time user I want to be able to track the number of questions.
   - As a first time user I want to get feedback on my score.
   - As a first time user I want to know the correct answer if the answer clicked is wrong, to further learn about the human body.
+  - As a first time user I want to have the score result sent to my email.
   - As a first time user I want to be able to restart the quiz without limitations.
 
 - ### Returning User
@@ -93,39 +94,58 @@ The wireframes were produced via Balsamiq.
 ## Features
  - ### Navigation
 
-   - The navigation bar is fully responsive with an i-button and about text...
+   - The navigation bar is fully responsive with an i-button connected to the about text. Upon click it will display a modal box with instructions for the user. The modal box has an overlay to visually to remove focus from the background.
 
    - The navigation bar is fixed so it always remains visible for the user.
 
-![Navigation bar]()
+   - The navigation bar offers a switch to turn the sound on and off. The user will hear a heartbeat sound to create excitment and a connection to the theme of the quiz.
 
-![Navigation bar hover]()
+![Navigation bar](assets/images/navigation-bar.PNG)
 
 ![Navigation mobile]()
 
-- ### The Start Page 
-    
+- ### The Home Page 
+  - The home page is intuitive and it invites the user to test their knowledge about the human body. 
+  - The welcome text is inviting and gives the user a clear perception about the purpose.
+  - There are three buttons in connection to the welcome text: Easy, Medium and Hard. The user can play the quiz on different difficulty levels.
 
 
-![Start-page]()
+![Home-page](assets/images/home-page.PNG)
 
+ ### Footer
+ - The footer contains social media links which takes the user to my LinkedIn profile and my Github repo page for the Human Body Quiz.
+ - The links opens in a new tab which allows for the user to navigate easy.
+
+![Footer]()
 
 - ### Quiz
-  
+  - When the user click one of the buttons on the start page, the quiz will start. The quiz also has a container, equalent to the the welcome container to maintain recognition for the user.
+  - The quiz contaioner will display:
+    - The number of the question (1 of 10 upon start)
+    - The question itself that comes in a random order.
+    - Four answer buttons for the user tho choose between.
+    - The right answer till display a green backgroundcolor.
+    - An incorrect answer will display with a red backgroundcolor, and the right answer will also be displayed to the user.
+    - The answer buttons will be disabled once the user has answered.
+    - There is scoreboard that will track the right answers and display it to the user.
+    - The quiz will proceed automatically after the user has answered.
+    - There is also a next button if the user want to proceed manually or skip a question.
+    - A home button is displayed next to the "next" button if the user wants to return to the homepage.
+
 
   ![The Quiz]()
 
 - ### End Of Quiz
-
+-When the user has finished the quiz after 10 questions, they  will be presented with their score. Depending on the number of right answers, the user will be displayed with different text. 
+  - A score between 0-5 will display the text: "Give it another go!".
+  - A score between 6-8 will display the text: "Nicely done!".
+  - A score between 9-10 will display the text: "Excellent job!"
+The user will also have the oppurtunity to enter their email and get the score result sent to ther email adress.
+- The user can click on the "Start over" button to go back to the home page and choose the same, or another difficulty level.
 
 ![End Quiz] ()
 
-- ### Footer
- - The footer contains social media links which takes the user to Facebook, Instagram, Twitter and Youtube.
- - The social media icons will change color when hovered over.
- - The links opens in a new tab which allows for the user to navigate easy.
-
-![Footer]()
+-
 
 
 ### Features left to implement
@@ -137,6 +157,7 @@ The wireframes were produced via Balsamiq.
 ## Languages 
   - HTML5
   - CSS
+  - Javascript
 
   ## Frameworks, Libraries and Programs
    - [Am I Responsive](https://ui.dev/amiresponsive) - Was used to ensure that the website is responsive on diffrerent devices.
@@ -181,7 +202,7 @@ No known bugs.
 ### Links Testing
  - All navigation links on the site has been tested manually to ensure that they are working, and takes the user to the right page.
  - All the buttons were tested to ensure that the the links are working correctly.
- - All the social media links were tested separately to make sure they function, and opens in a new tab.
+ - The social media links were tested separately to make sure they function, and opens in a new tab.
 
 
 ### Browser Testing

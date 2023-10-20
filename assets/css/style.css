@@ -206,13 +206,23 @@ a {
 
 .question-div  .btn, 
 .track-score,
-#start-over {
+#start-over,
+#submit {
     display: flex;
     justify-content: center;
 }
 
+#user-email {
+    font-size: 90%;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    width: 50%;
+    margin-bottom: 5%;
+}
+
 #start-over {
-    margin-top: 20%;
+    margin-top: 10%;
 }
 
 #questions {

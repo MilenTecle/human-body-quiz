@@ -95,24 +95,6 @@ let difficultyLevel;
  * using EmailJS
  */
 
-//Template parameters
-function sendMail(userScore, userEmail) {
-    const emailScore = {
-        score: userScore,
-        to_email: userEmail,
-    };
-
-// My serviceID and TemplateID
-emailjs.send("service_5h7u1ni","template_zec8mic", emailScore)
-.then(function(response) {
-   console.log("Email sent!", response);
-}, function(error) {
-   console.log("Email could not be sent", error);
-});
-
-}
-
-
 /** Get the html id and
  * add a click event to the submit button
  * Override the default way of submitting the form
@@ -123,10 +105,27 @@ const emailForm = document.getElementById('email-score');
 emailForm.addEventListener('submit', function(event)  {
     event.preventDefault();
 
-const userInput = document.getElementById('user-email').value;
+const userInput = document.getElementById('user-email');
+const userEmail = userInput.value;
+
 const userScore = score;
 
-sendMail(userScore, userInput);
+//Template parameters
+const emailScore = {
+    score: userScore,
+    to_email: userEmail,
+
+};
+// My serviceID and TemplateID
+emailjs.send("service_5h7u1ni","template_zec8mic", emailScore)
+     .then(function(response) {
+        console.log("Email sent!", response);
+     }, function(error) {
+        console.log("Email could not be sent", error);
+     });
+
+
+//sendMail(userScore, userInput);
 
 });
 
