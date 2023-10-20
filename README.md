@@ -1,6 +1,6 @@
 # Human Body Quiz
 
-The human body quiz is a quiz to test the general knowledge of the human body. The purpose of the quiz is to learn in a fun way.
+The human body quiz is a quiz to test the general knowledge of the human body. The purpose of the quiz is to learn in a fun way. The quiz can be played on all screens. The quiz can be used to learn something new or to challenge yourself with different levels of difficulty. The quiz can be played unlimited times, until you have reach the score you aimed for.
 The live link can be found here - [Human Body Quiz](https://milentecle.github.io/human-body-quiz/)
 
 ![](docs/readme-images/am-i-responsive.png)
@@ -22,7 +22,7 @@ The live link can be found here - [Human Body Quiz](https://milentecle.github.io
   - [Navigation](#navigation)
   - [The Home Page](#the-home-page)
   - [Footer](#footer)
-  - [Quiz](#quiz)
+  - [The Quiz](#quiz)
   - [End Of Quiz](#end-of-quiz)
   - [Features left to implement](#features-left-to-implement)
 
@@ -54,7 +54,7 @@ The live link can be found here - [Human Body Quiz](https://milentecle.github.io
 
  ## Site Owner Goals
 
-To give the user an oppurtunity to learn about the human body in a fun and easy way. The purpose of the quiz is educational and it is suitable to everyone. To create curiosity and interest in a way that is easy to understand. Challenge to try something new,  acquire new knowledge and expand knowledge base. For those with an interest in anatomy and the human body, the quiz has different levels of difficulty.
+To give the user an oppurtunity to learn about the human body in a fun and easy way. The purpose of the quiz is educational and it is suitable for everyone. To create curiosity and interest in a way that is easy to understand. Challenge a user to try something new, acquire new knowledge and expand knowledge base. To give the user an opportunity to do the quiz on different levels to keep learning. 
 
 
 ## User Stories
@@ -87,9 +87,9 @@ The Lato Font is the font used on the website. The font was imported via [Google
 ## Wireframes
 The wireframes were produced via Balsamiq.
 
-[Desktop Wireframe](docs/wireframes/Desktop.png) 
+[Desktop Wireframe](assets/wireframes/Desktop.png) 
 
-[Mobile Wireframe](docs/wireframes/Mobile.png)
+[Mobile Wireframe](assets/wireframes/Mobile.png)
 
 ## Features
  - ### Navigation
@@ -100,9 +100,8 @@ The wireframes were produced via Balsamiq.
 
    - The navigation bar offers a switch to turn the sound on and off. The user will hear a heartbeat sound to create excitment and a connection to the theme of the quiz.
 
-![Navigation bar](assets/images/navigation-bar.PNG)
+![Navigation bar](assets/images/navigation-bar.png)
 
-![Navigation mobile]()
 
 - ### The Home Page 
   - The home page is intuitive and it invites the user to test their knowledge about the human body. 
@@ -110,7 +109,7 @@ The wireframes were produced via Balsamiq.
   - There are three buttons in connection to the welcome text: Easy, Medium and Hard. The user can play the quiz on different difficulty levels.
 
 
-![Home-page](assets/images/home-page.PNG)
+![Home-page](assets/images/home-page.png)
 
  ### Footer
  - The footer contains social media links which takes the user to my LinkedIn profile and my Github repo page for the Human Body Quiz.
@@ -118,11 +117,11 @@ The wireframes were produced via Balsamiq.
 
 ![Footer]()
 
-- ### Quiz
-  - When the user click one of the buttons on the start page, the quiz will start. The quiz also has a container, equalent to the the welcome container to maintain recognition for the user.
-  - The quiz contaioner will display:
+- ### The Quiz
+  - When the user clicks on one of the buttons on the start page, the quiz will start. The quiz also has a container, equalent to the the welcome container to maintain recognition for the user.
+  - The quiz container will display:
     - The number of the question (1 of 10 upon start)
-    - The question itself that comes in a random order.
+    - The question itself comes in a random order.
     - Four answer buttons for the user tho choose between.
     - The right answer till display a green backgroundcolor.
     - An incorrect answer will display with a red backgroundcolor, and the right answer will also be displayed to the user.
@@ -133,7 +132,10 @@ The wireframes were produced via Balsamiq.
     - A home button is displayed next to the "next" button if the user wants to return to the homepage.
 
 
-  ![The Quiz]()
+  ![The Quiz](assets/images/the-quiz.png)
+  ![The Quiz](assets/images/correct-answer.png)
+  ![The Quiz](assets/images/incorrect-answer.png)
+
 
 - ### End Of Quiz
 -When the user has finished the quiz after 10 questions, they  will be presented with their score. Depending on the number of right answers, the user will be displayed with different text. 
@@ -215,10 +217,19 @@ No known bugs.
 
 ### User Stories Testing
    #### First time user
- 1. 
+ 1. The home page with the welcome container will tell the user what the quiz is about. The user can start the quiz immediately without difficulty by clicking one of the buttons in the welcome contaner.
+ 2. As a user I can choose between different levels; easy, medium and hard by clicking on one of the buttons.
+ 3. As a user I can play the quiz from my mobile, laptop, desktop and tablet.
+ 4. As a user I can see which question I am at and how many questions there are once I have started to play the quiz.
+ 5. As a first time I can track my score and see how many answers I am getting right while playing.
+ 6. As a first time user I will get instant feedback if my answer is wrong with a red background color and by seeing the right answer with the background color of green.
+ 7. As a first time user I can enter my email address when the quiz has ended, and get the score result sent to my email.
+ 8. As a first time I can retake the quiz by clickning on the "Start over" button wich will take me back to the home page.
 
    #### Returning user
- 1. 
+ 1. As a returning I am already familiar with the structure of the quiz and how to navigate through the quiz.
+ 2. As a returing I can retake quiz as many times as desired without any limitations and the questions will not always be the same.
+ 3. As a returning visitor I can choose to play on different levels, easy, medium and hard to keep learing about the human body.
 
 
   ## Friends and Family
