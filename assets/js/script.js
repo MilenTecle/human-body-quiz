@@ -193,7 +193,7 @@ nextButton.addEventListener('click', nextQuestion);
 
 function nextQuestion() {
     currentQuestionIndex += 1;
-    if(currentQuestionIndex < shuffledQuestions.length) {
+    if(currentQuestionIndex < maxQuestions) {
         resetAnswers();
         presentQuestions();
     } else {
@@ -201,11 +201,11 @@ function nextQuestion() {
         resultBoard.classList.remove('hide');
         // Present the user with different feedback depending on the score.
         if (score >= 0 && score <= 5) {
-            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. Give it another go!`;
+            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. \n\nGive it another go!`;
         } else if (score > 5 && score <=8) {
-            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. Nicely done!`;
+            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. \n\nNicely done!`;
         } else {
-            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. Exellent job!`;
+            finishedText.textContent =`You answered ${score} out of ${maxQuestions} questions right. \n\nExellent job!`;
         }
     }
 }
