@@ -357,6 +357,30 @@ footer {
         font-size: 0.7rem;
         padding: 5px 20px;
     }
+
+    /* Question div */
+
+    .question-div,
+    .quiz-content {
+        font-size: 0.7rem;
+        height: auto;
+        top: 20%;
+        width: 40%;
+    }
+
+    .next-home,
+    #questions,
+    .quiz-content {
+        margin-top: -5%;
+    }
+
+    .quiz-content {
+        top: 38%;
+    }
+
+    .feedback {
+        margin-top: 5%;
+    }
 }
 
 
@@ -374,8 +398,6 @@ footer {
         font-size: 1rem;
      }
     /* Modal box font size and container width*/
-     
-    
     #text-p,
      #instructions {
         font-size: 1.2rem;
