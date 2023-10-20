@@ -63,6 +63,8 @@ window.addEventListener('click', function (event) {
     }
 });
 
+
+
 //Connect the html id:s and elements to variables
 const startEasy= document.getElementById('start-easy');
 const startMedium = document.getElementById('start-medium');
@@ -87,6 +89,46 @@ let shuffledQuestions;
 let numberOf = 1;
 let maxQuestions = 10;
 let difficultyLevel;
+
+
+/** Function to send the score to the user
+ * using EmailJS
+ */
+
+//Template parameters
+function sendMail(userScore, userEmail) {
+    const emailScore = {
+        score: userScore,
+        to_email: userEmail,
+    };
+
+// My serviceID and TemplateID
+emailjs.send("service_5h7u1ni","template_zec8mic", emailScore)
+.then(function(response) {
+   console.log("Email sent!", response);
+}, function(error) {
+   console.log("Email could not be sent", error);
+});
+
+}
+
+
+/** Get the html id and
+ * add a click event to the submit button
+ * Override the default way of submitting the form
+ * the SendMail function will be called to send the email
+ */
+const emailForm = document.getElementById('email-score');
+
+emailForm.addEventListener('submit', function(event)  {
+    event.preventDefault();
+
+const userInput = document.getElementById('user-email').value;
+const userScore = score;
+
+sendMail(userScore, userInput);
+
+});
 
 
 /**
