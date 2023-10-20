@@ -37,10 +37,10 @@ soundOn.style.display = 'none';
  */
 
 const modalBox = document.getElementById('modal-box');
-const infoIcon = document.getElementById('info-icon')
+const infoIcon = document.getElementById('info-icon');
 const infoButton = document.getElementById('info-btn');
 const closeButton = document.getElementById('close-box');
-const overlay = document.getElementById('overlay')
+const overlay = document.getElementById('overlay');
 
 infoButton.addEventListener('click', openModal);
 infoIcon.addEventListener('click', openModal);
@@ -72,7 +72,7 @@ const startHard = document.getElementById('start-hard');
 const quizBoard = document.getElementById('quiz-board');
 const answerButtons = document.getElementById('answer-btns');
 const nextButton = document.getElementById('next-button');
-const homeButton = document.getElementById('home-button')
+const homeButton = document.getElementById('home-button');
 const questionArea = document.getElementById('question-area');
 const questionQuiz = document.getElementById('questions');
 const countScore = document.getElementById('score');
@@ -359,6 +359,69 @@ const questionsEasy = [
             { text: "Sour", correct: false},
             { text: "Umami", correct: false},
             { text: "Crunchy", correct: true,}
+        ]
+    },
+    { //Question 11
+        question: "Which part of the human digestive system is responsible for absorbing nutrients from food?",
+        answers: [
+            { text: "Stomach", correct: false},
+            { text: "Small intestine", correct: false},
+            { text: "Large intestine", correct: false},
+            { text: "Liver", correct: true,}
+        ]
+    },
+    { //Question 12
+        question: "What is the smallest unit of life in the human body?",
+        answers: [
+            { text: "Atom", correct: false},
+            { text: "Molecule", correct: false},
+            { text: "Tissue", correct: false},
+            { text: "Cell", correct: true,}
+        ]
+    },
+    { //Question 13
+        question: "How many teeth does the average adult human have?",
+        answers: [
+            { text: "20", correct: false},
+            { text: "24", correct: false},
+            { text: "32", correct: true},
+            { text: "28", correct: false,}
+        ]
+    },
+    { //Question 14
+        question: "What is the average body temperature of a healthy human in degrees Celsius?",
+        answers: [
+            { text: "37°C", correct: true},
+            { text: "42°C", correct: false},
+            { text: "25°C", correct: false},
+            { text: "30°C", correct: false,}
+        ]
+    },
+    { //Question 15
+        question: "Which of the following is a function of the skin?",
+        answers: [
+            { text: "Digestion", correct: false},
+            { text: "Protection", correct: true},
+            { text: "Pumping blood", correct: false},
+            { text: "Filtration", correct: false,}
+        ]
+    },
+    { //Question 15
+        question: "Which part of the human body is responsible for producing insulin?",
+        answers: [
+            { text: "Brain", correct: false},
+            { text: "Stomach", correct: false},
+            { text: "Pancreas", correct: true},
+            { text: "Lungs", correct: false,}
+        ]
+    },
+    { //Question 15
+        question: "Which part of the human body is responsible for storing excess glucose as glycogen?",
+        answers: [
+            { text: "Liver", correct: true},
+            { text: "Kidneys", correct: false},
+            { text: "Heart", correct: false},
+            { text: "Lungs", correct: false,}
         ]
     },
 ];
