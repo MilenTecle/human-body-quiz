@@ -346,7 +346,7 @@ footer {
 
     #text-p,
     #start-easy {
-        margin-top: -8%;
+        margin-top: -10%;
     }
 
     #text-container p,
@@ -454,7 +454,7 @@ footer {
     .modal {
         margin-top: -10%;
     }
-    
+     
     /* Welcome-container on startpage */ 
     .welcome{
          max-width: 420px;

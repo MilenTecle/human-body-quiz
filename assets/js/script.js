@@ -112,7 +112,7 @@ const userScore = score;
 //Template parameters
 const emailScore = {
     score: userScore,
-    to_email: userEmail,
+    useremail: userEmail,
 
 };
 // My serviceID and TemplateID
@@ -123,8 +123,6 @@ emailjs.send("service_5h7u1ni","template_zec8mic", emailScore)
         console.log("Email could not be sent", error);
      });
 
-
-//sendMail(userScore, userInput);
 
 });
 
