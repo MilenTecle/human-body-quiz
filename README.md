@@ -145,12 +145,10 @@ The wireframes were produced via Balsamiq.
   - A score between 0-5 will display the text: "Give it another go!".
   - A score between 6-8 will display the text: "Nicely done!".
   - A score between 9-10 will display the text: "Excellent job!"
-The user will also have the oppurtunity to enter their email and get the score result sent to ther email adress.
-- The user can click on the "Start over" button to go back to the home page and choose the same, or another difficulty level.
+  - The user will also have the oppurtunity to enter their email and get the score result sent to ther email adress. An alert message will display to show the user wether the email was sent or not.
+  - The user can click on the "Start over" button to go back to the home page and choose the same, or another difficulty level.
 
-![End Quiz] ()
-
--
+![End Quiz](assets/images/quiz-end.png)
 
 
 ### Features left to implement

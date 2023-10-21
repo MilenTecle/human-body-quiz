@@ -1,3 +1,26 @@
+//Connects the html id:s and elements to variables
+const startEasy= document.getElementById('start-easy');
+const startMedium = document.getElementById('start-medium');
+const startHard = document.getElementById('start-hard');
+const quizBoard = document.getElementById('quiz-board');
+const answerButtons = document.getElementById('answer-btns');
+const nextButton = document.getElementById('next-button');
+const questionArea = document.getElementById('question-area');
+const questionQuiz = document.getElementById('questions');
+const countScore = document.getElementById('score');
+const resultBoard = document.getElementById('results');;
+const finishedText = document.getElementById('feedback-text');
+const welcomeId = document.getElementById('welcome-id');
+const footerText = document.getElementById('footer-text');
+const alertSent = document.getElementById('sent');
+const alertError = document.getElementById('error');
+
+let score = 0;
+let currentQuestionIndex = 0;
+let shuffledQuestions;
+let numberOf = 1;
+let maxQuestions = 10;
+let difficultyLevel;
 
 /**
  * Change the sound icon when user clicks on it
@@ -65,31 +88,6 @@ window.addEventListener('click', function (event) {
 
 
 
-//Connect the html id:s and elements to variables
-const startEasy= document.getElementById('start-easy');
-const startMedium = document.getElementById('start-medium');
-const startHard = document.getElementById('start-hard');
-const quizBoard = document.getElementById('quiz-board');
-const answerButtons = document.getElementById('answer-btns');
-const nextButton = document.getElementById('next-button');
-const homeButton = document.getElementById('home-button');
-const questionArea = document.getElementById('question-area');
-const questionQuiz = document.getElementById('questions');
-const countScore = document.getElementById('score');
-const resultBoard = document.getElementById('results');;
-const finishedText = document.getElementById('feedback-text');
-const welcomeId = document.getElementById('welcome-id');
-const footerText = document.getElementById('footer-text');
-
-
-let score = 0;
-let currentQuestionIndex = 0;
-let shuffledQuestions;
-let numberOf = 1;
-let maxQuestions = 10;
-let difficultyLevel;
-
-
 /** Function to send the score to the user
  * using EmailJS
  */
@@ -103,10 +101,10 @@ const emailForm = document.getElementById('email-score');
 
 emailForm.addEventListener('submit', function(event)  {
     event.preventDefault();
+    emailForm.reset();
 
 const userInput = document.getElementById('user-email');
 const userEmail = userInput.value;
-
 const userScore = score;
 
 //Template parameters
@@ -119,8 +117,12 @@ const emailScore = {
 emailjs.send("service_5h7u1ni","template_zec8mic", emailScore)
      .then(function(response) {
         console.log("Email sent!", response);
+        alertSent.classList.remove('hide');
+        //alert("Email was sent successfully!");
      }, function(error) {
         console.log("Email could not be sent", error);
+        alertError.classList.remove('hide');
+        //alert("Email could not be sent!");
      });
 
 
@@ -263,7 +265,11 @@ function checkAnswer(button) {
 }
 
 
-
+/**
+ * This section contains all of the quiz questions
+ * separeted by the difficult level; easy, medium and hard. 
+ * Each level has 20 questions
+ */
 
 // Easy questions
 const questionsEasy = [

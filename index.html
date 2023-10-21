@@ -88,9 +88,7 @@
             <div id="answer-symbols"></div>
            <!--Next and home button-->
           <div class="next-home">
-            <a href="index.html">
-        <button class="btn home" id="home-button">Home</button>   
-            </a>
+            <a href="index.html" class="btn home" id="home-button">Home</a>
         <button class="btn next" id="next-button">Next</button>
     </div>
     </div>
@@ -101,17 +99,17 @@
             <p class="feedback" id="feedback-text"></p>
             
             <div class="end-quiz">
+                <div class="alert hide" id="sent">Email was sent successfully!</div>
+                <div class="alert hide" id="error">Email could not be sent!</div>
                 <!--Form to email score to the user-->
                 <form id="email-score">
-                <label for="user-email">Email: </label>
+                <label for="user-email">Enter your email to get your score</label>
                 <input type="email" name="email" id="user-email" placeholder="Enter your email">
                 <button class="btn email" id="submit">Submit</button>
             </form>
 
                  <!--Go back to home page and start over-->
-                <a href="index.html">
-                <button class="btn try-again" id="start-over">Start over</button>
-                </a>
+                <a href="index.html" class="btn try-again" id="start-over">Start over</a>
             </div>
           </div>
     </div>
@@ -127,7 +125,7 @@
       </div>
 </footer>
 
-
+<!--script for EmailJS-->
 <script src="https://cdn.emailjs.com/dist/email.min.js">
 </script>
 <script>
