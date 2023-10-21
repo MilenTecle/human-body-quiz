@@ -12,8 +12,7 @@ const resultBoard = document.getElementById('results');;
 const finishedText = document.getElementById('feedback-text');
 const welcomeId = document.getElementById('welcome-id');
 const footerText = document.getElementById('footer-text');
-const alertSent = document.getElementById('sent');
-const alertError = document.getElementById('error');
+
 
 let score = 0;
 let currentQuestionIndex = 0;
@@ -117,12 +116,10 @@ const emailScore = {
 emailjs.send("service_5h7u1ni","template_zec8mic", emailScore)
      .then(function(response) {
         console.log("Email sent!", response);
-        alertSent.classList.remove('hide');
-        //alert("Email was sent successfully!");
+       alert("Email was sent successfully!");
      }, function(error) {
         console.log("Email could not be sent", error);
-        alertError.classList.remove('hide');
-        //alert("Email could not be sent!");
+       alert("Email could not be sent!");
      });
 
 
@@ -427,6 +424,15 @@ const questionsEasy = [
             { text: "Lungs", correct: false,}
         ]
     },
+    { //Question 16
+        question: "Which of the following is a disorder characterized by uncontrollable episodes of falling asleep during the day?",
+        answers: [
+            { text: "Dyslexia", correct: false},
+            { text: "Epilepsy", correct: false},
+            { text: "Narcolepsy", correct: true},
+            { text: "Shingles", correct: false,}
+        ]
+    },
 ];
 
 
@@ -520,7 +526,25 @@ const questionsMedium = [
             { text: "Mucus", correct: false},
             { text: "Lymph", correct: false},
             { text: "Bile", correct: false},
-         { text: "Synovial fluid", correct: true},
+            { text: "Synovial fluid", correct: true},
+        ]
+    },
+    { //Question 11
+        question: "Which of the following is a structural, fibrous protein found in the dermis?",
+        answers: [
+            { text: "Collagen", correct: true},
+            { text: "Heparin", correct: false},
+            { text: "Lipocyte", correct: false},
+            { text: "Sebum", correct: false},
+        ]
+    },
+    { //Question 12
+        question: "Which of the following is the point at which an impulse is transmitted from one neuron to another neuron?",
+        answers: [
+            { text: "Dendrite", correct: false},
+            { text: "Glial cell", correct: false},
+            { text: "Synapse", correct: true},
+            { text: "Terminal plate", correct: false},
         ]
     },
 ];
@@ -616,6 +640,96 @@ const questionsHard = [
             { text: "Nearsightedness", correct: false},
             { text: "Farsightedness", correct: false},
             { text: "Color blindness", correct: false},
+        ]
+    },
+    { //Question 11
+        question: "Which cells in the blood do not have a nucleus?",
+        answers: [
+            { text: "Lymphocyte", correct: false},
+            { text: "Monocyte", correct: false},
+            { text: "Erythrocyte", correct: true},
+            { text: "Basophil", correct: false},
+        ]
+    },
+    { //Question 12
+        question: "Which of the following is flexible connective tissue that is attached to bones at the joints?",
+        answers: [
+            { text: "Adipose", correct: false},
+            { text: "Cartilage", correct: true},
+            { text: "Muscle", correct: false},
+            { text: "Nerve", correct: false},
+        ]
+    },
+    { //Question 13
+        question: "Which of the following is located beneath the diaphragm in the left upper quadrant of the abdominal cavity?",
+        answers: [
+            { text: "Appendix", correct: false},
+            { text: "Duodenum", correct: false},
+            { text: "Gallbladder", correct: false},
+            { text: "Spleen", correct: true},
+        ]
+    },
+    { //Question 14
+        question: "Which of the following anatomical regions of the abdomen lies just distal to the sternum?",
+        answers: [
+            { text: "Epigastric", correct: true},
+            { text: "Hypochondriac", correct: false},
+            { text: "Lumbar", correct: false},
+            { text: "Umbilical", correct: false},
+        ]
+    },
+    { //Question 15
+        question: "Which of the following cavities are separated by the diaphragm?",
+        answers: [
+            { text: "Abdominal and pelvic", correct: false},
+            { text: "Cranial and spinal", correct: false},
+            { text: "Pericardial and pleural", correct: true},
+            { text: "Thoracic and abdominal", correct: false},
+        ]
+    },
+    { //Question 16
+        question: "The anatomic location of the spinal canal is",
+        answers: [
+            { text: "Caudal", correct: false},
+            { text: "Frontal", correct: false},
+            { text: "Transverse", correct: false},
+            { text: "Dorsal", correct: true},
+        ]
+    },
+    { //Question 17
+        question: "The anatomic location of the spinal canal is",
+        answers: [
+            { text: "Caudal", correct: false},
+            { text: "Frontal", correct: false},
+            { text: "Transverse", correct: false},
+            { text: "Dorsal", correct: true},
+        ]
+    },
+    { //Question 18
+        question: "Blood flows from the right ventricle of the heart into which of the following structures?",
+        answers: [
+            { text: "Inferior vena cava", correct: false},
+            { text: "Pulmonary veins", correct: false},
+            { text: "Pulmonary arteries", correct: true},
+            { text: "Right atrium", correct: false},
+        ]
+    },
+    { //Question 19
+        question: "Which of the following cranial nerves is responsible for controlling eye movement and pupil dilation?",
+        answers: [
+            { text: "Abducens", correct: true},
+            { text: "Hypoglossal", correct: false},
+            { text: "Olfactory", correct: false},
+            { text: "Trochlear", correct: false},
+        ]
+    },
+    { //Question 19
+        question: "Which of the following organs removes bilirubin from the blood,",
+        answers: [
+            { text: "Gallbladder", correct: false},
+            { text: "Liver", correct: true},
+            { text: "Spleen", correct: false},
+            { text: "Stomach", correct: false},
         ]
     },
 ];

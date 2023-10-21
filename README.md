@@ -164,14 +164,15 @@ The wireframes were produced via Balsamiq.
 
   ## Frameworks, Libraries and Programs
    - [Am I Responsive](https://ui.dev/amiresponsive) - Was used to ensure that the website is responsive on diffrerent devices.
-   - [Responsinator](http://www.responsinator.com/) - Was also used to ensure that the website is responsive on diffrerent devices.
    - [Balsamiq](https://balsamiq.com/) - Was used to create the wireframes before starting the project.
    - [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Was used on a daily basis throughout the project to make changes and to test the responsivness.
+   - [EmailJS](https://www.emailjs.com/) - Was used to create a template and send email to user with the score.
    - [Font Awesome](https://fontawesome.com/) - Was used for Social Media icons in footer and for Contact information on the contact page.
    - [Gitpod](https://gitpod.io/) - Was the Codespace used for this project.
    - [Git](https://git-scm.com/) - Git was used for version control by using the Gitpod terminal to commit and then push to Github.
    - [Github](https://github.com/) - Is where the projects code is stored after being pushed. 
    - [Google Fonts](https://fonts.google.com/) - Was used to import fonts to the page.
+   - [Responsinator](http://www.responsinator.com/) - Was also used to ensure that the website is responsive on diffrerent devices.
    - [TinyPNG](https://tinypng.com/)- Was used to reduce the file size and keep the image quality.
    - [WEBP Converter](https://cloudconvert.com/webp-converter) - Also used to reduce the file size and keep the image quality.
    - [W3C](https://www.w3.org/)- Was used for HTML and CSS Validation.
@@ -276,6 +277,11 @@ The live link can be found here - [The Human Body Quiz](https://milentecle.githu
  - I used parts of this code to create the overlay effect: 
    - [w3schools](https://www.w3schools.com/howto/howto_css_overlay.asp)
 
+ - I used these guides to setup the functionality for EmailJS along with quidance from my mentor:
+   - [EmailJS](https://www.emailjs.com/docs/sdk/send/)
+   - [Mailtrap](https://mailtrap.io/blog/javascript-send-email/)
+   - [Stackoverflow](https://stackoverflow.com/questions/58791656/send-email-directly-from-javascript-using-emailjs)
+
 - I used these videos in general to understand the full concept of creating a quiz:
    - [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)
    - [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
@@ -288,6 +294,7 @@ The live link can be found here - [The Human Body Quiz](https://milentecle.githu
 ### Content
 The content besides the questions were written by the developer. The majority of the quiz questions were generated from:
  - [ChatGPT](https://chat.openai.com/auth/login)
+ - [Anatomy test](https://www.aama-ntl.org/cma-aama-exam/study/anatomy-physiology-practice-test)
 
 ### Media
 Images were taken from:

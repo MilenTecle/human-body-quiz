@@ -141,13 +141,6 @@ a {
     color: black;
 }
 
-.alert {
-    border: 1px solid rgb(143, 188, 219);
-    background-color:whitesmoke;
-    width: fit-content;
-    height: auto;
-}
-
 #text-container {
     padding: 5%;
 }
