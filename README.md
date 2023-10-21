@@ -1,9 +1,10 @@
 # Human Body Quiz
 
 The human body quiz is a quiz to test the general knowledge of the human body. The purpose of the quiz is to learn in a fun way. The quiz can be played on all screens. The quiz can be used to learn something new or to challenge yourself with different levels of difficulty. The quiz can be played unlimited times, until you have reach the score you aimed for.
+
 The live link can be found here - [Human Body Quiz](https://milentecle.github.io/human-body-quiz/)
 
-![](docs/readme-images/am-i-responsive.png)
+![Human Body Quiz Am I Responsive Image](assets/images/am-i-responsive.png)
 
 ## Contents
 
@@ -76,10 +77,12 @@ To give the user an oppurtunity to learn about the human body in a fun and easy 
 ## Design
 
 ### Images
-The background image on the site reflects the purpose of the quiz.
+The background image on the site reflects the purpose of the quiz and the appealing image invites the user to further explore the website.
 
 ### Colours
-The colour scheme of the website is...
+The colour scheme used for the website blends well with the background image with a consistent look for the user. The light color breaks off the blue where needed.
+![Color scheme](assets/images/color-scheme.png)
+
 
 ### Fonts
 The Lato Font is the font used on the website. The font was imported via [Google Fonts](https//:fonts.google.com). Sans Serif is the backup font.
@@ -115,7 +118,7 @@ The wireframes were produced via Balsamiq.
  - The footer contains social media links which takes the user to my LinkedIn profile and my Github repo page for the Human Body Quiz.
  - The links opens in a new tab which allows for the user to navigate easy.
 
-![Footer]()
+![Footer](assets/images/footer.png)
 
 - ### The Quiz
   - When the user clicks on one of the buttons on the start page, the quiz will start. The quiz also has a container, equalent to the the welcome container to maintain recognition for the user.
@@ -211,9 +214,10 @@ No known bugs.
  - The Website was tested on Microsoft Edge, Google Chrome, Firefox and Safari browsers and no issues were noted.
 
 ### Device Testing
- - 
-  - [Responsinator]()
-  - [Am I responsive]()
+  - The website was tested and viewed and tested on different devices such as: Iphone 8, Iphone mini 12 and Pro, Samsung Galaxy S21, Samsung Galaxy Tab S6 lite, Ipad Mini, Laptop and Desktop to see that the website is responsive on different devices. Chrome developer tools was used to test and to check the responsivness on multiple devices. 
+  - I also used the following websites to test the responsivness:
+  - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fmilentecle.github.io%2Fhuman-body-quiz%2F)
+  - [Am I responsive](https://ui.dev/amiresponsive?url=https://milentecle.github.io/human-body-quiz/)
 
 ### User Stories Testing
    #### First time user
@@ -250,42 +254,50 @@ The live link can be found here - [The Human Body Quiz](https://milentecle.githu
 
 ### Code
  - I used code from here to create the playSound function: 
-  https://stackoverflow.com/questions/33663740/play-sound-and-change-play-icon-to-stop-icon-on-click
-  https://stackoverflow.com/questions/33671577/click-in-icon-play-to-start-sound-then-click-stop-icon-to-stop-sound
-  https://dev.to/shantanu_jana/how-to-play-sound-on-button-click-in-javascript-3m48
+   - [Stackoverflow play sound on click](https://stackoverflow.com/questions/33663740/play-sound-and-change-play-icon-to-stop-icon-on-click)
+   - [Stackoverflow stop sound](https://stackoverflow.com/questions/33671577/click-in-icon-play-to-start-sound-then-click-stop-icon-to-stop-sound)
+   - [Dev](https://dev.to/shantanu_jana/how-to-play-sound-on-button-click-in-javascript-3m48)
  
- - I used some of this code to create a modal box and to make it work accordingly: https://www.w3schools.com/howto/howto_css_modals.asp.
+ - I used some of this code to create a modal box and to make it work accordingly: 
+   - [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
  
- - I used code from this video to accurately create the answer buttons and create the text found in my PresentQuestions function. I also used code from the same video to reset the answers with a while loop, found in my resetAnswers function: https://www.youtube.com/watch?v=PBcqGxrr9g8.
+ - I used code from this video to accurately create the answer buttons and create the text found in my PresentQuestions function. I also used code from the same video to reset the answers with a while loop, found in my resetAnswers function: 
+   - [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 
- - I used code from this video to sort the questions in a randomized order with the sort method: https://www.youtube.com/watch?v=riDzcEQbX6k. I also used code from the same video to connect right and wrong answers to the corresponing answers buttons.
+ - I used code from this video to sort the questions in a randomized order with the sort method. I also used code from the same video to connect right and wrong answers to the corresponing answers buttons.
+   - [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
  - I used these as inspiration to better understand how to use existing code when connecting the logic for the difficulty buttons and questions: 
-  https://stackoverflow.com/questions/52210163/how-to-generate-new-object-while-using-the-same-methods.
-  https://stackoverflow.com/questions/53766944/simple-quiz-with-different-levels-divs
-  https://stackoverflow.com/questions/55855497/how-to-create-a-quiz-that-has-different-questions-on-different-pages
+    - [Stackoverflow use same methods new objects](https://stackoverflow.com/questions/52210163/how-to-generate-new-object-while-using-the-same-methods)
+    - [Stackoverflow different levels](https://stackoverflow.com/questions/53766944/simple-quiz-with-different-levels-divs)
+    - [Stackoverflow different questions](https://stackoverflow.com/questions/55855497/how-to-create-a-quiz-that-has-different-questions-on-different-pages)
 
- - I used this to better understand how to disable the answer buttons: https://alvarotrigo.com/blog/disable-button-javascript/
+ - I used this to better understand how to disable the answer buttons: 
+   - [Alvarotrigo](https://alvarotrigo.com/blog/disable-button-javascript/)
 
- - I used parts of this code to create the overlay effect: https://www.w3schools.com/howto/howto_css_overlay.asp
+ - I used parts of this code to create the overlay effect: 
+   - [w3schools](https://www.w3schools.com/howto/howto_css_overlay.asp)
 
 - I used these videos in general to understand the full concept of creating a quiz:
-  https://www.youtube.com/watch?v=PBcqGxrr9g8
-  https://www.youtube.com/watch?v=riDzcEQbX6k
-  https://www.youtube.com/watch?v=_LYxkClHnV0
-  https://www.shecodes.io/athena/59004-how-to-create-a-standard-quiz-with-html-css-and-javascript
-  https://stackoverflow.com/questions/75575841/how-can-i-initiate-a-quiz-by-clicking-on-a-button-in-javascript
-  https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp
+   - [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+   - [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
+   - [Youtube](https://www.youtube.com/watch?v=_LYxkClHnV0)
+   - [Shecodes](https://www.shecodes.io/athena/59004-how-to-create-a-standard-quiz-with-html-css-and-javascript)
+   - [Stackoverflow](https://stackoverflow.com/questions/75575841/how-can-i-initiate-a-quiz-by-clicking-on-a-button-in-javascript)
+   - [Dev](https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp)
  
 
 ### Content
- - 
+The content besides the questions were written by the developer. The majority of the quiz questions were generated from:
+ - [ChatGPT](https://chat.openai.com/auth/login)
 
 ### Media
 Images were taken from:
  - [Shutterstock](https://www.shutterstock.com/)
- - Audio
+
+ Audio was taken from:
+ - [Quicksounds](https://quicksounds.com/library/sounds/heartbeat)
 
 ### Acknowledgements
-- Antonio, my mentor, for guiding med throughout the project.
+- Antonio, my mentor, for guiding med throughout the project and has given me important suggestions to improve the quiz and funcionality.
 - To my husband and family, for all the support and patience.
