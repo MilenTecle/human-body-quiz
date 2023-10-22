@@ -19,6 +19,7 @@
 <body>
     <header>
         <!--sound logo-->
+        <div class="header-container">
         <nav>
             <div class="sound-control">
             <i class="fa-solid fa-volume-xmark" id="sound-off"></i>   
@@ -50,9 +51,11 @@
             </div>
         </div>
         </nav>
+    </div>
     </header>
 
     <!--main content-->
+    <div class="container">
     <div class="welcome" id="welcome-id">
         <div id="text-container">
         <h2 id="text">Welcome to the human body quiz!</h2>
@@ -75,8 +78,10 @@
 
         </div>
     </div>
+</div>
 
     <!--Elements and content for the quiz made in JS-->
+    <div class="container">
     <div class="question-div hide" id="quiz-board" >
             <div id="question-area" class="quiz-questions"></div>
             <div id="questions" class="quiz-questions"></div>
@@ -88,12 +93,14 @@
             <div id="answer-symbols"></div>
            <!--Next and home button-->
           <div class="next-home">
-            <a href="index.html" class="btn home" id="home-button">Home</a>
+            <a href="index.html" class="btn home" id="home-button" aria-label="Go back to home page">Home</a>
         <button class="btn next" id="next-button">Next</button>
     </div>
     </div>
+</div>
 
     <!--Elements and content to display results to the user-->
+    <div class="container">
     <div class="quiz-content hide" id="results">
         <div id="quiz-end">
             <p class="feedback" id="feedback-text"></p>
@@ -102,15 +109,17 @@
                 <!--Form to email score to the user-->
                 <form id="email-score">
                 <label for="user-email">Enter your email to get your score</label>
-                <input type="email" name="email" id="user-email" placeholder="Enter your email">
+                <input type="email" name="email" id="user-email" required ="Enter your email">
                 <button class="btn email" id="submit">Submit</button>
             </form>
 
                  <!--Go back to home page and start over-->
-                <a href="index.html" class="btn try-again" id="start-over">Start over</a>
+                <a href="index.html" class="btn try-again" id="start-over" aria-label="Go back to home page and start over">Start over</a>
             </div>
           </div>
     </div>
+    </div>
+</div>
 
     <!--footer-->
     <footer>
