@@ -406,7 +406,7 @@ const questionsEasy = [
             { text: "Filtration", correct: false,}
         ]
     },
-    { //Question 15
+    { //Question 16
         question: "Which part of the human body is responsible for producing insulin?",
         answers: [
             { text: "Brain", correct: false},
@@ -415,7 +415,7 @@ const questionsEasy = [
             { text: "Lungs", correct: false,}
         ]
     },
-    { //Question 15
+    { //Question 17
         question: "Which part of the human body is responsible for storing excess glucose as glycogen?",
         answers: [
             { text: "Liver", correct: true},
@@ -424,13 +424,31 @@ const questionsEasy = [
             { text: "Lungs", correct: false,}
         ]
     },
-    { //Question 16
+    { //Question 18
         question: "Which of the following is a disorder characterized by uncontrollable episodes of falling asleep during the day?",
         answers: [
             { text: "Dyslexia", correct: false},
             { text: "Epilepsy", correct: false},
             { text: "Narcolepsy", correct: true},
             { text: "Shingles", correct: false,}
+        ]
+    },
+    { //Question 19
+        question: "Which of the following parts of the eye is responsible for controlling the amount of light that enters the eye by changing its size?",
+        answers: [
+            { text: "Cornea", correct: false},
+            { text: "Sclera", correct: false},
+            { text: "Iris", correct: true},
+            { text: "Lens", correct: false,}
+        ]
+    },
+    { //Question 20
+        question: "What is the medical term for the inflammation of the liver, often caused by viral infections or excessive alcohol consumption?",
+        answers: [
+            { text: "Pneumonia", correct: false},
+            { text: "Hepatitis", correct: true},
+            { text: "Gastritis", correct: false},
+            { text: "Bronchitis", correct: false,}
         ]
     },
 ];
@@ -545,6 +563,78 @@ const questionsMedium = [
             { text: "Glial cell", correct: false},
             { text: "Synapse", correct: true},
             { text: "Terminal plate", correct: false},
+        ]
+    },
+    { //Question 13
+        question: "Calcium, potassium, and sodium are classified as which of the following?",
+        answers: [
+            { text: "Androgens", correct: false},
+            { text: "Electrolytes", correct: true},
+            { text: "Estrogens", correct: false},
+            { text: "Prostaglandins", correct: false},
+        ]
+    },
+    { //Question 14
+        question: "Which of the following diseases are treated with injections of vitamin B-12?",
+        answers: [
+            { text: "Crohn's disease", correct: false},
+            { text: "Diabetes mellitus", correct: false},
+            { text: "Graves' disease", correct: false},
+            { text: "Pernicious anemia", correct: true},
+        ]
+    },
+    { //Question 15
+        question: "What is the main function of red blood cells (erythrocytes) in the human body",
+        answers: [
+            { text: "Carrying oxygen", correct: true},
+            { text: "Fighting infections", correct: false},
+            { text: "Blood clotting", correct: false},
+            { text: "Regulating body temperature", correct: false},
+        ]
+    },
+    { //Question 16
+        question: "In the human respiratory system, where does the process of external respiration occur, involving the exchange of oxygen and carbon dioxide?",
+        answers: [
+            { text: "Trachea", correct: false},
+            { text: "Larynx", correct: false},
+            { text: "Bronchioles", correct: false},
+            { text: "Alveoli", correct: true},
+        ]
+    },
+    { //Question 17
+        question: "Which of the following components of the blood is responsible for clot formation to stop bleeding?",
+        answers: [
+            { text: "Plasma", correct: false},
+            { text: "Hemoglobin", correct: false},
+            { text: "Platelets", correct: true},
+            { text: "Red blood cells", correct: false},
+        ]
+    },
+    { //Question 18
+        question: "The bones in the human body are connected by fibrous tissues called:",
+        answers: [
+            { text: "Ligaments", correct: true},
+            { text: "Tendons", correct: false},
+            { text: "Cartilage", correct: true},
+            { text: "Nerves", correct: false},
+        ]
+    },
+    { //Question 19
+        question: "Which of the following is the part of the nervous system responsible for the 'fight or flight' response to stress or danger?",
+        answers: [
+            { text: "Peripheral nervous system", correct: false},
+            { text: "Sympathetic nervous system", correct: true},
+            { text: "Autonomic nervous system", correct: false},
+            { text: "Somatic nervous system", correct: false},
+        ]
+    },
+    { //Question 20
+        question: "What is the medical term for the inflammation of the lining of the stomach, often caused by irritants such as excessive alcohol or certain medications?",
+        answers: [
+            { text: "Pneumonia", correct: false},
+            { text: "Hepatitis", correct: false},
+            { text: "Bronchitis", correct: false},
+            { text: "Gastritis", correct: true},
         ]
     },
 ];
@@ -723,13 +813,13 @@ const questionsHard = [
             { text: "Trochlear", correct: false},
         ]
     },
-    { //Question 19
-        question: "Which of the following organs removes bilirubin from the blood,",
+    { //Question 20
+        question: "Which of the following best describes the process whereby the stomach muscles contract to propel food through the digestive tract?",
         answers: [
-            { text: "Gallbladder", correct: false},
-            { text: "Liver", correct: true},
-            { text: "Spleen", correct: false},
-            { text: "Stomach", correct: false},
+            { text: "Absorption", correct: false},
+            { text: "Emulsion", correct: false},
+            { text: "Peristalsis", correct: true},
+            { text: "Regurgitation", correct: false},
         ]
     },
 ];

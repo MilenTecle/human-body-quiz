@@ -14,6 +14,7 @@ body {
     display: flex;
     justify-content: center;
     overflow: scroll;
+    overflow-x: hidden;
 }
 
 header {
@@ -67,10 +68,10 @@ nav {
     margin-left: 1rem;
 }
 
-#about-text {
+/*#about-text {
     font-size: 1.3rem;
     text-align: center;
-}
+}*/
 
 ol, #instructions {
     margin-left: 1rem;
@@ -128,7 +129,7 @@ a {
 }
 
 
-/* textblock on landing page*/
+/* Welcome div, Quiz div*/
 .welcome,
 .quiz-content {
     border: 1px solid rgb(143, 188, 219);
@@ -159,7 +160,16 @@ a {
     margin: 5%;
 }
 
-/* Style the start, next and start-over buttons */
+/* Button styles */
+/* Start quiz button */
+.start-quiz {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: black;
+}
+
+/*Styles the start, next and start-over buttons */
 .btn {
     font-size: 90%;
     padding: 5px 20px;
@@ -168,6 +178,13 @@ a {
     cursor: pointer;
     margin: 0 auto;
     color: black;
+}
+
+/* add hover effect to start, next and start-over the buttons */
+.btn:hover {
+    background: #0b2742;
+    color: white;
+    border: 1px solid #0b2742;
 }
 
 .start {
@@ -199,13 +216,34 @@ a {
     border: 1px solid white;
 }
 
-/* Start quiz button */
-.start-quiz {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
+
+/* answer button style */
+.answer-btns {
+    font-size: 90%;
+    padding: 5px 20px;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80%;
+    margin: 2% 10%;
     color: black;
 }
+
+
+/* background-color to display correct answer*/
+.correct {
+    background:#227521;
+    color: black;
+    border: none;
+}
+/* background-color to display incorrect answer*/
+.incorrect {
+    background: #9c1c14;
+    color: black;
+    border: none;
+}
+
+
 
 /* Styles related to the quiz */
 .question-div {
@@ -224,8 +262,42 @@ a {
     justify-content: center;
 }
 
+#questions {
+    padding: 5% 5px;
+}
 
-/* Form styles form user email input */
+/* Styles the quiz questions */
+#question-area {
+    font-size: 100%;
+    font-weight: bold;
+    padding: 2% 5px;
+}
+
+.quiz-questions {
+    font-size: 100%;
+}
+
+#score {
+    font-weight: bold;
+    margin-top: 5%;
+}
+
+
+/* Hide all the elements with this class */
+.hide {
+    display: none;
+}
+
+/* Style and aligns the text when quiz is finished */
+.feedback {
+    font-size: 120%;
+    margin-top: 10%;
+    /* Line break*/
+    white-space: pre-line; 
+}
+
+
+/* Form styles user email input */
 form {
     text-align: center;
 }
@@ -251,69 +323,6 @@ label {
     width: fit-content;
 }
 
-#questions {
-    padding: 5% 5px;
-}
-
-/* Styles the quiz questions */
-#question-area {
-    font-size: 100%;
-    font-weight: bold;
-    padding: 2% 5px;
-}
-
-.quiz-questions {
-    font-size: 100%;
-}
-
-#score {
-    font-weight: bold;
-    margin-top: 5%;
-}
-/* Style and aligns the text when quiz is finished */
-.feedback {
-    font-size: 120%;
-    margin-top: 10%;
-    /* Line break*/
-    white-space: pre-line; 
-}
-
-/* answer button style */
-.answer-btns {
-    font-size: 90%;
-    padding: 5px 20px;
-    border: 1px solid white;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 80%;
-    margin: 2% 10%;
-    color: black;
-}
-
-/* add hover effect to start, next and start-over the buttons */
-.btn:hover {
-    background: #0b2742;
-    color: white;
-    border: 1px solid #0b2742;
-}
-
-/* background-color to display correct answer*/
-.correct {
-    background:#227521;
-    color: black;
-    border: none;
-}
-/* background-color to display incorrect answer*/
-.incorrect {
-    background: #9c1c14;
-    color: black;
-    border: none;
-}
-
-/* Hide all the elements with this class */
-.hide {
-    display: none;
-}
 
 /* footer */
 footer {
@@ -335,11 +344,6 @@ footer {
 
 .social-media {
     font-size: 90%;
-}
-
-.social-media i:hover {
-    padding: 0;
-    color: white;
 }
 
 .social-media a {
@@ -366,7 +370,6 @@ footer {
           margin-top: 40%;
       }
  
-      
       .start {
          font-size: 1rem;
       }
@@ -389,7 +392,7 @@ footer {
 
 
 /* Media query for landscape view */
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (min-width: 667px) {
 
     footer {
         margin-bottom: -5%;
