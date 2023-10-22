@@ -186,14 +186,14 @@ No known bugs.
 ### Validator Testing
  - ### HTML
     - No errors were returned when running every page of the code through the [W3C Markup Validator](https://validator.w3.org/)
-     - [W3C Markup Validator Results]()
+     - [W3C Markup Validator Results](assets/test-results/w3c-css-validator-result.png)
  - ### CSS
   - No errors were returned when running the CSS through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator)
-     - [W3C CSS Validator Results]()
+     - [W3C CSS Validator Results](assets/test-results/w3c-css-validator-result.png)
 
  - ### JS Hint
   -
-    - [JS Hint result]()
+    - [JS Hint result](assets/test-results/js-hint-result.png)
 
  - ### Accessibility
   - The site achieved a Lighthouse accessibility score of 100%, a confirmation that the fonts and colours chosen are accessible and easy to read.
