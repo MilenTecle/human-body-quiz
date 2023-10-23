@@ -179,6 +179,7 @@ The wireframes were produced via Balsamiq.
    - [TinyPNG](https://tinypng.com/) - Was used to reduce the file size and keep the image quality.
    - [WEBP Converter](https://cloudconvert.com/webp-converter) - Also used to reduce the file size and keep the image quality.
    - [W3C](https://www.w3.org/) - Was used for HTML and CSS Validation.
+   - [Web Formatter](https://webformatter.com/html) - Was used to make sure the format looks good.
    - [JS-hint](https://jshint.com/) - Was used for Javascript Validation.
 
 ## Known bugs
@@ -302,6 +303,10 @@ The live link can be found here - [The Human Body Quiz](https://milentecle.githu
    - [EmailJS](https://www.emailjs.com/docs/sdk/send/)
    - [Mailtrap](https://mailtrap.io/blog/javascript-send-email/)
    - [Stackoverflow](https://stackoverflow.com/questions/58791656/send-email-directly-from-javascript-using-emailjs)
+
+- I used these guides to understand how to push footer down without using fixed position:
+  - [Stackoverflow](https://stackoverflow.com/questions/55541850/how-to-make-footer-stay-at-bottom-of-the-page-with-flex-box)
+  - [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Mastering_wrapping_of_flex_items)
 
 - I used these videos in general to understand the full concept of creating a quiz:
    - [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)

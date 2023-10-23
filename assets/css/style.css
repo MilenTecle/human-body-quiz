@@ -6,13 +6,15 @@
     margin: 0;
 }
 
+/* Added overflow: auto so the content scrolls on small devices*/
+/* flex-direction column to push the footer down instead of a sticky footer */
 body {
     font-family: 'Lato', sans-serif;
     min-height: 100vh;
-    background: center 20% /cover no-repeat fixed;
+    background: center 20% /cover no-repeat;
     background-image: url('../images/background-image.webp');
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     overflow: auto;
     overflow-x: hidden;
 }
@@ -30,7 +32,7 @@ nav {
 
 .about {
     margin-left: auto;
-    padding-right: 10px;
+    padding-right: 25px;
 }
 
 .sound-control {
@@ -125,12 +127,20 @@ a {
 
 
 /* Welcome div, Quiz div and Quiz end div*/
+.main-content {
+    display: flex;
+    justify-content: center;
+    /*To fill the container */
+    flex-grow: 1;
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
+
+
 
 .welcome,
 .quiz-content {
@@ -298,6 +308,8 @@ form {
 
 label {
     font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
 }
 #user-email {
     font-size: 90%;
@@ -320,11 +332,9 @@ label {
 
 /* footer */
 footer {
-    position:absolute;
-    width: 100%;
-    bottom: 0;
     justify-content: center;
     display: flex;
+    margin-top: auto;
 }
 
 #footer-text {
@@ -385,13 +395,14 @@ footer {
      }
 
 
-/* Media query for landscape view */
+/* Media query for landscape view
 @media screen and (orientation: landscape) and (min-width: 667px) {
 
     footer {
         margin-bottom: -5%;
     }
 }
+ */
 
 /* Media query for tablets and larger screens */
 @media screen and (min-width: 768px) {
