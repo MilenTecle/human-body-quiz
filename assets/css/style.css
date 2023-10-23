@@ -125,20 +125,15 @@ a {
 /* Welcome div, Quiz div and Quiz end div*/
 .main-content {
     display: flex;
-    /*justify-content: center;
-    To fill the container
-    flex-grow: 1; */
-    overflow-y: auto;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
-    top: 30%;
+    justify-content: center;
+    /*To fill the container */
+    flex-grow: 1;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    /*align-items: center;*/
+    align-items: center;
 }
 
 .welcome,
@@ -146,9 +141,8 @@ a {
     border: 1px solid rgb(143, 188, 219);
     background-color: rgba(143, 188, 219, 0.9);
     max-width: 80%;
-    /*min-height: 60%;*/
-    min-height:60vh;
-    margin-top: 50%;
+    min-height: 55%;
+    margin-top: 30%;
     color: black;
 }
 
@@ -334,7 +328,7 @@ label {
 footer {
     justify-content: center;
     display: flex;
-    margin-top: 40px; /*auto*/
+    margin-top: auto;
 }
 
 #footer-text {
@@ -455,10 +449,6 @@ footer {
      #text-p,
      #start-easy {
         margin-top: -5%;
-     }
-
-     .welcome {
-        margin-top: 53%;
      }
 
 
