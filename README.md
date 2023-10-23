@@ -38,7 +38,9 @@ The live link can be found here - [Human Body Quiz](https://milentecle.github.io
   - [HTML](#html)
   - [CSS](#css)
   - [Accessibility](#accessibility)
-- [Form Testing](#form-testing)
+- [Quiz Testing](#quiz-testing)
+  - [Start and play](#start-and-play)
+  - [End Of Quiz](#end-of-quiz)
 - [Links Testing](#links-testing)
 - [Browser Testing](#browser-testing)
 - [Device Testing](#device-testing)
@@ -80,8 +82,9 @@ To give the user an oppurtunity to learn about the human body in a fun and easy 
 The background image on the site reflects the purpose of the quiz and the appealing image invites the user to further explore the website.
 
 ### Colours
-The colour scheme used for the website blends well with the background image with a consistent look for the user. The light color breaks off the blue where needed.
-![Color scheme](assets/images/color-scheme.png)
+The colour scheme used for the website blends well with the background image with a consistent look for the user. The light colour breaks off the blue where needed.
+
+![Colour scheme](assets/images/color-scheme.png)
 
 
 ### Fonts
@@ -126,8 +129,8 @@ The wireframes were produced via Balsamiq.
     - The number of the question (1 of 10 upon start)
     - The question itself comes in a random order.
     - Four answer buttons for the user tho choose between.
-    - The right answer till display a green backgroundcolor.
-    - An incorrect answer will display with a red backgroundcolor, and the right answer will also be displayed to the user.
+    - The right answer till display a green background colour.
+    - An incorrect answer will display with a red background colour, and the right answer will also be displayed to the user.
     - The answer buttons will be disabled once the user has answered.
     - There is scoreboard that will track the right answers and display it to the user.
     - The quiz will proceed automatically after the user has answered.
@@ -141,7 +144,7 @@ The wireframes were produced via Balsamiq.
 
 
 - ### End Of Quiz
--When the user has finished the quiz after 10 questions, they  will be presented with their score. Depending on the number of right answers, the user will be displayed with different text. 
+  - When the user has finished the quiz after 10 questions, they  will be presented with their score. Depending on the number of right answers, the user will be displayed with different text. 
   - A score between 0-5 will display the text: "Give it another go!".
   - A score between 6-8 will display the text: "Nicely done!".
   - A score between 9-10 will display the text: "Excellent job!"
@@ -152,7 +155,7 @@ The wireframes were produced via Balsamiq.
 
 
 ### Features left to implement
-  - 
+  - A highscore board where the user can save their score and follow their own progress.
 
 
 ## Technologies used
@@ -173,10 +176,10 @@ The wireframes were produced via Balsamiq.
    - [Github](https://github.com/) - Is where the projects code is stored after being pushed. 
    - [Google Fonts](https://fonts.google.com/) - Was used to import fonts to the page.
    - [Responsinator](http://www.responsinator.com/) - Was also used to ensure that the website is responsive on diffrerent devices.
-   - [TinyPNG](https://tinypng.com/)- Was used to reduce the file size and keep the image quality.
+   - [TinyPNG](https://tinypng.com/) - Was used to reduce the file size and keep the image quality.
    - [WEBP Converter](https://cloudconvert.com/webp-converter) - Also used to reduce the file size and keep the image quality.
-   - [W3C](https://www.w3.org/)- Was used for HTML and CSS Validation.
-   - [JS-hint]()- Was used for Javascript Validation.
+   - [W3C](https://www.w3.org/) - Was used for HTML and CSS Validation.
+   - [JS-hint](https://jshint.com/) - Was used for Javascript Validation.
 
 ## Known bugs
 No known bugs.
@@ -185,14 +188,14 @@ No known bugs.
 
 ### Validator Testing
  - ### HTML
-    - No errors were returned when running every page of the code through the [W3C Markup Validator](https://validator.w3.org/)
+    - No errors were returned when running the page of the code through the [W3C Markup Validator](https://validator.w3.org/)
      - [W3C Markup Validator Results](assets/test-results/w3c-css-validator-result.png)
  - ### CSS
   - No errors were returned when running the CSS through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator)
      - [W3C CSS Validator Results](assets/test-results/w3c-css-validator-result.png)
 
  - ### JS Hint
-  -
+  - No errors were returned when running the Javascript code through [JS Hint](https://jshint.com/)
     - [JS Hint result](assets/test-results/js-hint-result.png)
 
  - ### Accessibility
@@ -200,8 +203,26 @@ No known bugs.
     - [Lighthouse result]()
 
 
-### Quiz Testing 
- - 
+### Quiz Testing
+ - ### Start and play 
+    - That the buttons, easy, medium and hard will start the quiz has been tested to make sure they work properly.
+    - The functionality that the buttons will lead to the right difficulty questions when clicking on one of the buttons to start the quiz has been tested.
+    - That the questions are presented in a randomized order has been tested.
+    - That the right answer will display a green background colour, the incorrect with a red background colour and the right answer till be displayed if user's answer is wrong has all been tested.
+    - That the answer buttons disables after the user has chosen an answer to ensure that the user can't change the answer has been tested.
+    - That the number of question and which question the user is on is displaying has been tested.
+    - That the score count is adding points upon correct answer and is being displayed to the user has been tested.
+    - When the user has answered, there's a short delay so the user can see the answer before moving on to next question automatically has been tested.
+    - That the buttons home and next are working as intended has been tested.
+
+  - ### End Of Quiz
+    - That the user will be presented with the total score, number of right answers has been tested.
+    - That the user is getting the right feedback text depening on the number of correct answers has been tested.
+    - That the user can enter their email address to get their score result sent to their email and email validation has been tested.
+    - That the submit button is working properly and the user gets a confirmation with an alert message that the email has been sent has been tested.
+    - That the start over button takes the user back to the home page has been tested.
+
+
 
 ### Links Testing
  - All navigation links on the site has been tested manually to ensure that they are working, and takes the user to the right page.
@@ -213,25 +234,25 @@ No known bugs.
  - The Website was tested on Microsoft Edge, Google Chrome, Firefox and Safari browsers and no issues were noted.
 
 ### Device Testing
-  - The website was tested and viewed and tested on different devices such as: Iphone 8, Iphone mini 12 and Pro, Samsung Galaxy S21, Samsung Galaxy Tab S6 lite, Ipad Mini, Laptop and Desktop to see that the website is responsive on different devices. Chrome developer tools was used to test and to check the responsivness on multiple devices. 
+  - The website was tested and on different devices such as: Iphone 8, Iphone mini 12 and Pro, Samsung Galaxy S21, Samsung Galaxy Tab S6 lite, Ipad Mini, Laptop and Desktop to see that the website is responsive on different devices. Chrome developer tools was used to test and to check the responsivness on multiple devices. 
   - I also used the following websites to test the responsivness:
   - [Responsinator](http://www.responsinator.com/?url=https%3A%2F%2Fmilentecle.github.io%2Fhuman-body-quiz%2F)
   - [Am I responsive](https://ui.dev/amiresponsive?url=https://milentecle.github.io/human-body-quiz/)
 
 ### User Stories Testing
    #### First time user
- 1. The home page with the welcome container will tell the user what the quiz is about. The user can start the quiz immediately without difficulty by clicking one of the buttons in the welcome contaner.
+ 1. The home page with the welcome container will tell the user what the quiz is about. The user can start the quiz immediately without difficulty by clicking one of the buttons in the welcome contaner, or click on "about" to get more information about the quiz.
  2. As a user I can choose between different levels; easy, medium and hard by clicking on one of the buttons.
  3. As a user I can play the quiz from my mobile, laptop, desktop and tablet.
  4. As a user I can see which question I am at and how many questions there are once I have started to play the quiz.
- 5. As a first time I can track my score and see how many answers I am getting right while playing.
- 6. As a first time user I will get instant feedback if my answer is wrong with a red background color and by seeing the right answer with the background color of green.
+ 5. As a first time user I can track my score and see how many answers I am getting right while playing.
+ 6. As a first time user I will get instant feedback if my answer is wrong with a red background colour, and by seeing the right answer with the background colour of green.
  7. As a first time user I can enter my email address when the quiz has ended, and get the score result sent to my email.
- 8. As a first time I can retake the quiz by clickning on the "Start over" button wich will take me back to the home page.
+ 8. As a first time user I can retake the quiz by clickning on the "Start over" button which will take me back to the home page.
 
    #### Returning user
  1. As a returning I am already familiar with the structure of the quiz and how to navigate through the quiz.
- 2. As a returing I can retake quiz as many times as desired without any limitations and the questions will not always be the same.
+ 2. As a returing I can retake the quiz as many times as desired without any limitations and the questions will not always be the same.
  3. As a returning visitor I can choose to play on different levels, easy, medium and hard to keep learing about the human body.
 
 
@@ -260,10 +281,10 @@ The live link can be found here - [The Human Body Quiz](https://milentecle.githu
  - I used some of this code to create a modal box and to make it work accordingly: 
    - [w3schools](https://www.w3schools.com/howto/howto_css_modals.asp)
  
- - I used code from this video to accurately create the answer buttons and create the text found in my PresentQuestions function. I also used code from the same video to reset the answers with a while loop, found in my resetAnswers function: 
+ - I used code from this video to accurately create the answer buttons and to create the text found in my PresentQuestions function. I also used code from the same video to reset the answers with a while loop, found in my resetAnswers function: 
    - [Youtube](https://www.youtube.com/watch?v=PBcqGxrr9g8)
 
- - I used code from this video to sort the questions in a randomized order with the sort method. I also used code from the same video to connect right and wrong answers to the corresponing answers buttons.
+ - I used code from this video to sort the questions in a randomized order with the sort method. I also used code from the same video to connect right and wrong answers to the corresponing answer buttons.
    - [Youtube](https://www.youtube.com/watch?v=riDzcEQbX6k)
 
  - I used these as inspiration to better understand how to use existing code when connecting the logic for the difficulty buttons and questions: 
@@ -304,5 +325,5 @@ Images were taken from:
  - [Quicksounds](https://quicksounds.com/library/sounds/heartbeat)
 
 ### Acknowledgements
-- Antonio, my mentor, for guiding med throughout the project and has given me important suggestions to improve the quiz and funcionality.
-- To my husband and family, for all the support and patience.
+- Antonio, my mentor, for guiding med throughout the project with important suggestions to improve the quiz and funcionality.
+- To my husband and family, for all the support and patience throughout this project.

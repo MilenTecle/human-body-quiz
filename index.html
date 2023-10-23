@@ -1,146 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--Meta tags for search engines-->
-<meta name="description" content="Test your general knowledge about the human body with a quiz">
-<meta name="keywords" content="human body quiz, general knowledge, human anatomy">
-<!--Favicon-->
-<link rel="shortcut icon" href="assets/favicon/android-chrome-192x192.png" type="image/x-icon">
-<link rel="shortcut icon" href="assets/favicon/android-chrome-512x512.png" type="image/x-icon">
-<link rel="shortcut icon" href="assets/favicon/apple-touch-icon.png" type="image/x-icon">
-<link rel="shortcut icon" href="assets/favicon/favicon-16x16.png" type="image/x-icon">
-<link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon">
-<!--Stylesheet-->
-<link rel="stylesheet" href="assets/css/style.css">
-<title>Human Body Quiz</title>
-</head>
-<body>
-    <header>
-        <!--sound logo-->
-        <div class="header-container">
-        <nav>
-            <div class="sound-control">
-            <i class="fa-solid fa-volume-xmark" id="sound-off"></i>   
-            <i class="fa-solid fa-volume-high" id="sound-on"></i>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Meta tags for search engines-->
+        <meta name="description" content="Test your general knowledge about the human body with a quiz" />
+        <meta name="keywords" content="human body quiz, general knowledge, human anatomy" />
+        <!--Favicon-->
+        <link rel="shortcut icon" href="assets/favicon/android-chrome-192x192.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="assets/favicon/android-chrome-512x512.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="assets/favicon/apple-touch-icon.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="assets/favicon/favicon-16x16.png" type="image/x-icon" />
+        <link rel="shortcut icon" href="assets/favicon/favicon-32x32.png" type="image/x-icon" />
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <title>Human Body Quiz</title>
+    </head>
+    <body>
+        <header>
+            <!--sound logo-->
+            <div class="header-container">
+                <nav>
+                    <div class="sound-control">
+                        <i class="fa-solid fa-volume-xmark" id="sound-off"></i>
+                        <i class="fa-solid fa-volume-high" id="sound-on"></i>
+                    </div>
+                    <!--about logo-->
+                    <div class="about">
+                        <i class="fa-solid fa-circle-info" id="info-icon"><span id="info-btn"> About</span> </i>
+                    </div>
+
+                    <!--Modal container-->
+                    <div id="overlay"></div>
+                    <div id="modal-box" class="modal">
+                        <div class="modal-text">
+                            <span class="close" id="close-box">&times;</span>
+                            <h3 id="instructions">Instructions</h3>
+                            <ol class="list">
+                                <li>You can choose difficulty; easy, medium or hard. Each level has 10 questions.</li>
+                                <li>You have the option to skip a question and proceed to the next.</li>
+                                <li>A correct answer will give you 1 point. You can track your score while you play.</li>
+                                <li>The correct answer will be displayed if your answer is incorrect.</li>
+                                <li>Once the quiz has ended you will see your total score.</li>
+                                <li>You have the option to retake the quiz unlimited times.</li>
+                                <li>The quiz will start once you click the easy, medium or hard button.</li>
+                            </ol>
+                            <br />
+                            <p id="intro-end">Good luck!</p>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <!--about logo-->
-            <div class="about">
-            <i class="fa-solid fa-circle-info" id="info-icon"><span id="info-btn"> About</span>
-            </i>
-            </div>
-        
-        <!--Modal container-->
-        <div id="overlay"></div>
-        <div id="modal-box" class="modal">
-            <div class="modal-text">
-                <span class="close" id="close-box">&times;</span>
-                <h3 id="instructions">Instructions</h3>
-                <ol class="list">
-                <li>You can choose difficulty; easy, medium or hard. Each level has 10 questions.</li>
-                <li>You have the option to skip a question and proceed to the next</li>
-                <li>A correct answer will give you 1 point. You can track your score while you play.</li>
-                <li>The correct answer will be displayed if your answer is incorrect</li>
-                <li>Once the quiz has ended you will see your total score.</li>
-                <li>You have the option to retake the quiz unlimited times.</li>
-                <li>The quiz will start once you click the easy, medium or hard button</li>
-                 </ol> 
-                <br>
-                <p id="intro-end">Good luck!</p>
+        </header>
+
+        <!--main content-->
+        <div class="container">
+            <div class="welcome" id="welcome-id">
+                <div id="text-container">
+                    <h2 id="text">Welcome to the human body quiz!</h2>
+                    <p id="text-p">This quiz will test your general knowledge about the human body.</p>
+
+                    <!--Easy-->
+                    <div class="start-quiz">
+                        <button class="btn start" id="start-easy">Easy</button>
+                    </div>
+
+                    <!--Medium-->
+                    <div class="start-quiz">
+                        <button class="btn start" id="start-medium">Medium</button>
+                    </div>
+
+                    <!--Hard-->
+                    <div class="start-quiz">
+                        <button class="btn start" id="start-hard">Hard</button>
+                    </div>
+                </div>
             </div>
         </div>
-        </nav>
-    </div>
-    </header>
 
-    <!--main content-->
-    <div class="container">
-    <div class="welcome" id="welcome-id">
-        <div id="text-container">
-        <h2 id="text">Welcome to the human body quiz!</h2>
-        <p id="text-p">This quiz will test your general knowledge about the human body.</p>
-
-        <!--Easy-->
-        <div class="start-quiz">
-        <button class="btn start" id="start-easy">Easy</button>
+        <!--Elements and content for the quiz made in JS-->
+        <div class="container">
+            <div class="question-div hide" id="quiz-board">
+                <div id="question-area" class="quiz-questions"></div>
+                <div id="questions" class="quiz-questions"></div>
+                <!--Scoreboard-->
+                <div id="answer-btns"></div>
+                <div class="track-score">
+                    <div id="score">Score: 0/10</div>
+                </div>
+                <div id="answer-symbols"></div>
+                <!--Next and home button-->
+                <div class="next-home">
+                    <a href="index.html" class="btn home" id="home-button" aria-label="Go back to home page">Home</a>
+                    <button class="btn next" id="next-button">Next</button>
+                </div>
+            </div>
         </div>
 
-        <!--Medium-->
-        <div class="start-quiz">
-            <button class="btn start" id="start-medium">Medium</button>
-            </div>
+        <!--Elements and content to display results to the user-->
+        <div class="container">
+            <div class="quiz-content hide" id="results">
+                <div id="quiz-end">
+                    <p class="feedback" id="feedback-text"></p>
 
-        <!--Hard-->
-        <div class="start-quiz">
-            <button class="btn start" id="start-hard">Hard</button>
-            </div>
+                    <div class="end-quiz">
+                        <!--Form to email score to the user-->
+                        <form id="email-score">
+                            <label for="user-email">Enter your email to get your score</label>
+                            <input type="email" name="email" id="user-email" required placeholder="Enter your email" />
+                            <button class="btn email" id="submit">Submit</button>
+                        </form>
 
+                        <!--Go back to home page and start over-->
+                        <a href="index.html" class="btn try-again" id="start-over" aria-label="Go back to home page and start over">Start over</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-    <!--Elements and content for the quiz made in JS-->
-    <div class="container">
-    <div class="question-div hide" id="quiz-board" >
-            <div id="question-area" class="quiz-questions"></div>
-            <div id="questions" class="quiz-questions"></div>
-            <!--Scoreboard-->
-            <div id="answer-btns"></div>
-            <div class="track-score">
-                <div id="score">Score: 0/10</div>
+        <!--footer-->
+        <footer>
+            <div class="social-media">
+                <p id="footer-text">
+                    Milen Tecle<span id="footer-p"></span> <a href="https://linkedin.com/in/milen-tecle" target="_blank" rel="noopener" aria-label="Visit my LinkedIn page (opens in new tab)"> <i class="fa-brands fa-linkedin"></i></a>&nbsp;
+                    <a href="https://github.com/MilenTecle/human-body-quiz" target="_blank" rel="noopener" aria-label="Visit the Github repo (opens in new tab)"> <i class="fa-brands fa-github"></i></a>
+                </p>
             </div>
-            <div id="answer-symbols"></div>
-           <!--Next and home button-->
-          <div class="next-home">
-            <a href="index.html" class="btn home" id="home-button" aria-label="Go back to home page">Home</a>
-        <button class="btn next" id="next-button">Next</button>
-    </div>
-    </div>
-</div>
+        </footer>
 
-    <!--Elements and content to display results to the user-->
-    <div class="container">
-    <div class="quiz-content hide" id="results">
-        <div id="quiz-end">
-            <p class="feedback" id="feedback-text"></p>
-            
-            <div class="end-quiz">
-                <!--Form to email score to the user-->
-                <form id="email-score">
-                <label for="user-email">Enter your email to get your score</label>
-                <input type="email" name="email" id="user-email" required placeholder="Enter your email">
-                <button class="btn email" id="submit">Submit</button>
-            </form>
-
-                 <!--Go back to home page and start over-->
-                <a href="index.html" class="btn try-again" id="start-over" aria-label="Go back to home page and start over">Start over</a>
-            </div>
-          </div>
-    </div>
-    </div>
-
-
-    <!--footer-->
-    <footer>
-      <div class="social-media">
-        <p id="footer-text">Milen Tecle<span id="footer-p"></span>
-        <a href="https://linkedin.com/in/milen-tecle" target="_blank" rel="noopener" aria-label="Visit my LinkedIn page (opens in new tab)">
-            <i class="fa-brands fa-linkedin"></i></a>&nbsp;
-        <a href="https://github.com/MilenTecle/human-body-quiz" target="_blank" rel="noopener" aria-label="Visit the Github repo (opens in new tab)">
-            <i class="fa-brands fa-github"></i></a></p>
-      </div>
-</footer>
-
-<!--script for EmailJS-->
-<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
-    (function(){
-       emailjs.init("rJeQjVMV2wb40KU2I");
-    })();
- </script>
- <script src="assets/js/script.js" defer></script>
-<!--Font Awesome kit-->
-<script src="https://kit.fontawesome.com/55f1def7cd.js" crossorigin="anonymous"></script>
-</body>
+        <!--script for EmailJS-->
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script>
+            (function () {
+                emailjs.init("rJeQjVMV2wb40KU2I");
+            })();
+        </script>
+        <script src="assets/js/script.js" defer></script>
+        <!--Font Awesome kit-->
+        <script src="https://kit.fontawesome.com/55f1def7cd.js" crossorigin="anonymous"></script>
+    </body>
 </html>

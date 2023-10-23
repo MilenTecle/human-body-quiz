@@ -13,7 +13,7 @@ body {
     background-image: url('../images/background-image.webp');
     display: flex;
     justify-content: center;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
 }
 
@@ -67,11 +67,6 @@ nav {
     text-align: left;
     margin-left: 1rem;
 }
-
-/*#about-text {
-    font-size: 1.3rem;
-    text-align: center;
-}*/
 
 ol, #instructions {
     margin-left: 1rem;
@@ -129,7 +124,14 @@ a {
 }
 
 
-/* Welcome div, Quiz div*/
+/* Welcome div, Quiz div and Quiz end div*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .welcome,
 .quiz-content {
     border: 1px solid rgb(143, 188, 219);
@@ -138,13 +140,6 @@ a {
     min-height: 60%;
     margin-top: 30%;
     color: black;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 #text-container {
@@ -244,7 +239,6 @@ a {
 }
 
 
-
 /* Styles related to the quiz */
 .question-div {
         border: 1px solid rgb(143, 188, 219);
@@ -283,7 +277,7 @@ a {
 }
 
 
-/* Hide all the elements with this class */
+/* Hides all the elements with this class */
 .hide {
     display: none;
 }
