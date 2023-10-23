@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Added overflow: auto so the content scrolls on small devices*/
@@ -16,8 +17,8 @@ body {
     background-image: url('../images/background-image.webp');
     display: flex;
     flex-direction: column;
-    overflow: auto;
     overflow-x: hidden;
+    overflow: auto;
 }
 
 header {
@@ -33,11 +34,6 @@ nav {
 
 .about {
     margin-left: auto;
-    padding-right: 25px;
-}
-
-.sound-control {
-    padding-left: 10px;
 }
 
 /* The modal box styles */
@@ -140,8 +136,6 @@ a {
     justify-content: center;
     align-items: center;
 }
-
-
 
 .welcome,
 .quiz-content {
