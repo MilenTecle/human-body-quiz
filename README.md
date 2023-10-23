@@ -201,7 +201,7 @@ No known bugs.
 
  - ### Accessibility
   - The site achieved a Lighthouse accessibility score of 100%, a confirmation that the fonts and colours chosen are accessible and easy to read.
-    - [Lighthouse result]()
+    - [Lighthouse result](assets/test-results/lighthouse-result.png)
 
 
 ### Quiz Testing
