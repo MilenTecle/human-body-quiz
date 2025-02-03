@@ -197,6 +197,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10% 10%;
 }
 
 #next-button {
@@ -279,7 +280,7 @@ p {
 
 #score {
     font-weight: bold;
-    margin: 10px;
+    margin: 5%;
 }
 
 
@@ -504,6 +505,18 @@ footer {
         background: #0b2742;
         color: white;
         border: 1px solid #0b2742;
-        ;
+    }
+
+    .next-home {
+        margin: 0
+    }
+
+    #text-container {
+        padding: 5%;
+        margin-bottom: 15%;
+    }
+
+    #score {
+        margin: 10px;
     }
 }
