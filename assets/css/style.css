@@ -44,7 +44,7 @@ nav {
     top: 15%;
     width: 100%;
     height: 100%;
-   
+
 }
 
 .modal-text {
@@ -66,7 +66,8 @@ nav {
     margin-left: 1rem;
 }
 
-ol, #instructions {
+ol,
+#instructions {
     margin-left: 1rem;
 }
 
@@ -150,7 +151,8 @@ a {
     padding: 5%;
 }
 
-#text, p {
+#text,
+p {
     margin: 10% 10%;
     text-align: center;
 }
@@ -195,7 +197,6 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10% 10%;
 }
 
 #next-button {
@@ -231,10 +232,11 @@ a {
 
 /* background-color to display correct answer*/
 .correct {
-    background:#227521;
+    background: #227521;
     color: black;
     border: none;
 }
+
 /* background-color to display incorrect answer*/
 .incorrect {
     background: #9c1c14;
@@ -245,14 +247,14 @@ a {
 
 /* Styles related to the quiz */
 .question-div {
-        border: 1px solid rgb(143, 188, 219);
-        background: rgba(143, 188, 219);
-        max-width: 80%;
-        min-height: 60%;
-        margin-top: 30%;
+    border: 1px solid rgb(143, 188, 219);
+    background: rgba(143, 188, 219);
+    max-width: 80%;
+    min-height: 60%;
+    margin-top: 30%;
 }
 
-.question-div  .btn, 
+.question-div .btn,
 .track-score,
 #start-over,
 #submit {
@@ -277,7 +279,7 @@ a {
 
 #score {
     font-weight: bold;
-    margin-top: 5%;
+    margin: 10px;
 }
 
 
@@ -291,7 +293,7 @@ a {
     font-size: 120%;
     margin-top: 10%;
     /* Line break*/
-    white-space: pre-line; 
+    white-space: pre-line;
 }
 
 
@@ -305,6 +307,7 @@ label {
     display: flex;
     justify-content: center;
 }
+
 #user-email {
     font-size: 90%;
     padding: 5px 20px;
@@ -360,79 +363,85 @@ footer {
 
 /* Small devices and up */
 @media screen and (min-width: 576px) {
+
     /* Welcome-container on startpage and quiz container */
-      .welcome,
-      .question-div,
-      .quiz-content {
-          max-width: 400px;
-          margin-top: 40%;
-      }
- 
-      .start {
-         font-size: 1rem;
-      }
-     /* Modal box font size and container width*/
-     #text-p,
-      #instructions {
-         font-size: 1.2rem;
-      }
- 
-      ol li,
-      #intro-end {
-         font-size: 1rem;
-      }
- 
-      .modal-text {
-         width: 60%;
-      }
-      
-     }
+    .welcome,
+    .question-div,
+    .quiz-content {
+        max-width: 400px;
+        margin-top: 40%;
+    }
+
+    .start {
+        font-size: 1rem;
+    }
+
+    /* Modal box font size and container width*/
+    #text-p,
+    #instructions {
+        font-size: 1.2rem;
+    }
+
+    ol li,
+    #intro-end {
+        font-size: 1rem;
+    }
+
+    .modal-text {
+        width: 60%;
+    }
+
+}
 
 /* Media query for tablets and larger screens */
 @media screen and (min-width: 768px) {
-    /* Modal box styles*/
-     ol li {
-         font-size: 1.2rem;
-     }
- 
-     .close, #text {
-         font-size: 2rem;
-     }
- 
-     .modal {
-         top: 5%;
-     }
 
-     .modal-text {
+    /* Modal box styles*/
+    ol li {
+        font-size: 1.2rem;
+    }
+
+    .close,
+    #text {
+        font-size: 2rem;
+    }
+
+    .modal {
+        top: 5%;
+    }
+
+    .modal-text {
         height: 78%;
         width: 50%;
-     }
- 
-     #intro-end, .social-media  {
-         font-size: 1.2rem
-     }
- 
-     #instructions, #text-p {
-         font-size: 1.5rem;
-     }
+    }
 
-     #instructions {
+    #intro-end,
+    .social-media {
+        font-size: 1.2rem
+    }
+
+    #instructions,
+    #text-p {
+        font-size: 1.5rem;
+    }
+
+    #instructions {
         margin-top: -5%;
-     }
- 
-     /* Welcome-container on startpage and quiz container */
-     .welcome,
-     .question-div,
-     .quiz-content {
-         max-width: 400px;
-         margin-top: 45%;
-     }
- }
+    }
+
+    /* Welcome-container on startpage and quiz container */
+    .welcome,
+    .question-div,
+    .quiz-content {
+        max-width: 400px;
+        margin-top: 45%;
+    }
+}
 
 
 /* Large devices, laptops and desktops */
 @media screen and (min-width: 992px) {
-    
+
     /* Modal-box */
     .modal {
         margin-top: -10%;
@@ -445,52 +454,56 @@ footer {
     .modal-text {
         height: auto;
     }
-     
-     #text-p,
-     #start-easy {
+
+    #text-p,
+    #start-easy {
         margin-top: -5%;
-     }
+    }
 
 
-     /* Quiz container*/
-     .question-div,
-     .quiz-content  {
+    /* Quiz container*/
+    .question-div,
+    .quiz-content {
         max-width: 420px;
         height: 63%;
         font-size: 1.2rem;
-     }
+    }
 
     .social-media {
         font-size: 1rem;
-     }
-     /* Add the hover effect back on the next and submit button */
+    }
+
+    /* Add the hover effect back on the next and submit button */
     #next-button:hover,
     #submit:hover {
         background: #0b2742;
         color: white;
-        border: 1px solid #0b2742;;
+        border: 1px solid #0b2742;
+        ;
     }
 
-    }
+}
 
-    /* Very large desktops and laptops */
-    @media screen and (min-width: 1200px) {
-        /* Modal-box */
+/* Very large desktops and laptops */
+@media screen and (min-width: 1200px) {
+
+    /* Modal-box */
     .modal {
         margin-top: -4%;
     }
-        
-        /* Welcome-container on startpage*/
+
+    /* Welcome-container on startpage*/
     .welcome,
     .quiz-content {
-             max-width: 450px;
-             height: 63%;
-         }
+        max-width: 450px;
+        height: 63%;
+    }
 
-        /* Add the hover effect back on the next button */
-     #next-button:hover {
+    /* Add the hover effect back on the next button */
+    #next-button:hover {
         background: #0b2742;
         color: white;
-        border: 1px solid #0b2742;;
+        border: 1px solid #0b2742;
+        ;
     }
-        }
+}
